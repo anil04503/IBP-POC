@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.dryrun.utility.ListenerClass"></listener>
+</listeners>
+  <test thread-count="5" name="Test_All">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.dryrun.testcases.LoginPageTest"/>
+      <class name="com.dryrun.testcases.HomePageTest"/>
+      <!--<class name="com.dryrun.testcases.EndtoEndTest"/>
+      <class name="com.dryrun.testcases.IndexPageTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
