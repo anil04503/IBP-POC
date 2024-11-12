@@ -60,7 +60,14 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeTest(groups = {"Smoke","Sanity","Regression"})
 	public static void launchApp(String browserName) {
-		Action.openBrowser(browserName);
+		if(!browserName.contains("Head"))
+		{
+			Action.openBrowser(browserName);
+		}
+		if(browserName.contains("Head"))
+		{
+			Action.openHeadlessBrowser(browserName);
+		}
 		Action.implicitWait(getDriver(), 60);
 		Action.pageLoadTimeOut(getDriver(), 60);
 		Action.openURL(prop.getProperty("url"));

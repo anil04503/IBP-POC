@@ -17622,3 +17622,251 @@
 2024-11-11 23:08:32 INFO  Log:22 - The admin is trying to enter for the element [[ChromeDriver: chrome on windows (fc137da51162d46ab4b505ef481afb9d)] -> xpath: //input[@formcontrolname='email']]
 2024-11-11 23:08:33 INFO  Log:22 - The admin is entered successfully for the element [[ChromeDriver: chrome on windows (fc137da51162d46ab4b505ef481afb9d)] -> xpath: //input[@formcontrolname='email']]
 2024-11-11 23:08:33 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:00:30 INFO  Log:22 - Executing the openBrowser keyword
+2024-11-12 23:00:30 INFO  Log:22 - The Chrome browser is opening
+2024-11-12 23:00:34 INFO  Log:22 - The Chrome browser is opened successfully
+2024-11-12 23:00:34 INFO  Log:22 - The openBrowser keyword executed successfully
+2024-11-12 23:00:34 INFO  Log:22 - Executing the openURL keyword
+2024-11-12 23:00:34 INFO  Log:22 - The url https://art-sit-admin.convergentechnologies.com/#/auth/login is opening
+2024-11-12 23:00:40 INFO  Log:22 - The url https://art-sit-admin.convergentechnologies.com/#/auth/login is opened successfully
+2024-11-12 23:00:40 INFO  Log:22 - The openURL keyword executed successfully
+2024-11-12 23:00:40 INFO  Log:11 - =====================================verifyAIroastamaniLogo TEST START=========================================
+2024-11-12 23:00:40 INFO  Log:22 - Verifying the AI Roastamani Logo is Displayed in the Login Page
+2024-11-12 23:00:41 INFO  Log:22 - The AI Roastamani Logo is Displayed successfully in the Login Page
+2024-11-12 23:00:41 INFO  Log:15 - =====================================verifyAIroastamaniLogo TEST END=========================================
+2024-11-12 23:00:41 INFO  Log:11 - =====================================verifyTitle TEST START=========================================
+2024-11-12 23:00:41 INFO  Log:22 - Verifying the Title "ART - ADMIN" of the page is displayed
+2024-11-12 23:00:41 INFO  Log:22 - The Title "ART - ADMIN" is displayed successfully
+2024-11-12 23:00:41 INFO  Log:15 - =====================================verifyTitle TEST END=========================================
+2024-11-12 23:00:41 INFO  Log:11 - =====================================verifyemailtext TEST START=========================================
+2024-11-12 23:00:41 INFO  Log:22 - Verifying the "Email" text is displayed in the username field
+2024-11-12 23:00:41 INFO  Log:22 - The "Email" text is displayed successfully in the username field
+2024-11-12 23:00:41 INFO  Log:15 - =====================================verifyemailtext TEST END=========================================
+2024-11-12 23:00:41 INFO  Log:11 - =====================================verifypasswordtext TEST START=========================================
+2024-11-12 23:00:41 INFO  Log:22 - Verifying the "password" text is displayed in the username field
+2024-11-12 23:00:41 INFO  Log:22 - The "password" text is displayed successfully in the username field
+2024-11-12 23:00:41 INFO  Log:15 - =====================================verifypasswordtext TEST END=========================================
+2024-11-12 23:00:41 INFO  Log:11 - =====================================verifyusrnameRequiredtext TEST START=========================================
+2024-11-12 23:00:41 INFO  Log:22 - Verifying the required field text is displayed for the username field
+2024-11-12 23:00:41 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:00:41 INFO  Log:22 - The [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:00:41 INFO  Log:22 - The [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:00:41 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:00:42 INFO  Log:22 - The required field text is displayed successfully for the username field
+2024-11-12 23:00:42 INFO  Log:15 - =====================================verifyusrnameRequiredtext TEST END=========================================
+2024-11-12 23:00:42 INFO  Log:11 - =====================================verifypasswordRequiredtext TEST START=========================================
+2024-11-12 23:00:42 INFO  Log:22 - Verifying the required field text is displayed for the password field
+2024-11-12 23:00:42 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:00:42 INFO  Log:22 - The [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:00:42 INFO  Log:22 - The [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:00:42 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:00:42 INFO  Log:22 - The required field text is displayed successfully for the password field
+2024-11-12 23:00:42 INFO  Log:15 - =====================================verifypasswordRequiredtext TEST END=========================================
+2024-11-12 23:00:44 INFO  Log:11 - =====================================verifyusernamenotvalidtext TEST START=========================================
+2024-11-12 23:00:44 INFO  Log:22 - Verifying the username not valid text is displayed for the username field
+2024-11-12 23:00:44 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:00:44 INFO  Log:22 - The admin is trying to enter for the element [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:00:45 INFO  Log:22 - The admin is entered successfully for the element [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:00:45 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:00:47 INFO  Log:22 - The username not valid text is displayed successfully for the username field
+2024-11-12 23:00:47 INFO  Log:15 - =====================================verifyusernamenotvalidtext TEST END=========================================
+2024-11-12 23:00:47 INFO  Log:11 - =====================================verifyInvalidUserandPwdtext TEST START=========================================
+2024-11-12 23:00:47 INFO  Log:22 - Verifying the username and password are invalid text is displayed
+2024-11-12 23:00:47 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:00:48 INFO  Log:22 - The admin@ad is trying to enter for the element [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:00:49 INFO  Log:22 - The admin@ad is entered successfully for the element [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:00:49 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:00:49 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:00:49 INFO  Log:22 - The 123.0 is trying to enter for the element [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:00:51 INFO  Log:22 - The 123.0 is entered successfully for the element [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:00:51 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:00:53 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:00:53 INFO  Log:22 - The [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:00:53 INFO  Log:22 - The [[ChromeDriver: chrome on windows (59f4df7d908b7e315a5aedd170da6a57)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:00:53 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:06:51 INFO  Log:22 - Executing the openHeadlessBrowser keyword
+2024-11-12 23:06:51 INFO  Log:22 - The headless HeadlessChrome browser is opening
+2024-11-12 23:06:56 INFO  Log:22 - The headless HeadlessChrome browser is opened successfully
+2024-11-12 23:06:56 INFO  Log:22 - The openHeadlessBrowser keyword executed successfully
+2024-11-12 23:06:56 INFO  Log:22 - Executing the openURL keyword
+2024-11-12 23:06:56 INFO  Log:22 - The url https://art-sit-admin.convergentechnologies.com/#/auth/login is opening
+2024-11-12 23:07:01 INFO  Log:22 - The url https://art-sit-admin.convergentechnologies.com/#/auth/login is opened successfully
+2024-11-12 23:07:01 INFO  Log:22 - The openURL keyword executed successfully
+2024-11-12 23:07:02 INFO  Log:11 - =====================================verifyAIroastamaniLogo TEST START=========================================
+2024-11-12 23:07:02 INFO  Log:22 - Verifying the AI Roastamani Logo is Displayed in the Login Page
+2024-11-12 23:07:02 INFO  Log:22 - The AI Roastamani Logo is Displayed successfully in the Login Page
+2024-11-12 23:07:02 INFO  Log:15 - =====================================verifyAIroastamaniLogo TEST END=========================================
+2024-11-12 23:07:02 INFO  Log:11 - =====================================verifyTitle TEST START=========================================
+2024-11-12 23:07:02 INFO  Log:22 - Verifying the Title "ART - ADMIN" of the page is displayed
+2024-11-12 23:07:02 INFO  Log:22 - The Title "ART - ADMIN" is displayed successfully
+2024-11-12 23:07:02 INFO  Log:15 - =====================================verifyTitle TEST END=========================================
+2024-11-12 23:07:02 INFO  Log:11 - =====================================verifyemailtext TEST START=========================================
+2024-11-12 23:07:02 INFO  Log:22 - Verifying the "Email" text is displayed in the username field
+2024-11-12 23:07:02 INFO  Log:22 - The "Email" text is displayed successfully in the username field
+2024-11-12 23:07:02 INFO  Log:15 - =====================================verifyemailtext TEST END=========================================
+2024-11-12 23:07:02 INFO  Log:11 - =====================================verifypasswordtext TEST START=========================================
+2024-11-12 23:07:02 INFO  Log:22 - Verifying the "password" text is displayed in the username field
+2024-11-12 23:07:02 INFO  Log:22 - The "password" text is displayed successfully in the username field
+2024-11-12 23:07:02 INFO  Log:15 - =====================================verifypasswordtext TEST END=========================================
+2024-11-12 23:07:02 INFO  Log:11 - =====================================verifyusrnameRequiredtext TEST START=========================================
+2024-11-12 23:07:02 INFO  Log:22 - Verifying the required field text is displayed for the username field
+2024-11-12 23:07:02 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:02 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:07:03 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:07:03 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:03 INFO  Log:22 - The required field text is displayed successfully for the username field
+2024-11-12 23:07:03 INFO  Log:15 - =====================================verifyusrnameRequiredtext TEST END=========================================
+2024-11-12 23:07:03 INFO  Log:11 - =====================================verifypasswordRequiredtext TEST START=========================================
+2024-11-12 23:07:03 INFO  Log:22 - Verifying the required field text is displayed for the password field
+2024-11-12 23:07:03 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:03 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:07:03 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:07:03 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:03 INFO  Log:22 - The required field text is displayed successfully for the password field
+2024-11-12 23:07:03 INFO  Log:15 - =====================================verifypasswordRequiredtext TEST END=========================================
+2024-11-12 23:07:05 INFO  Log:11 - =====================================verifyusernamenotvalidtext TEST START=========================================
+2024-11-12 23:07:05 INFO  Log:22 - Verifying the username not valid text is displayed for the username field
+2024-11-12 23:07:05 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:05 INFO  Log:22 - The admin is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:06 INFO  Log:22 - The admin is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:06 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:08 INFO  Log:22 - The username not valid text is displayed successfully for the username field
+2024-11-12 23:07:08 INFO  Log:15 - =====================================verifyusernamenotvalidtext TEST END=========================================
+2024-11-12 23:07:09 INFO  Log:11 - =====================================verifyInvalidUserandPwdtext TEST START=========================================
+2024-11-12 23:07:09 INFO  Log:22 - Verifying the username and password are invalid text is displayed
+2024-11-12 23:07:09 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:09 INFO  Log:22 - The admin@ad is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:10 INFO  Log:22 - The admin@ad is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:10 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:10 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:10 INFO  Log:22 - The 123.0 is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:12 INFO  Log:22 - The 123.0 is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:12 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:14 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:14 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:07:14 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:07:14 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:17 INFO  Log:22 - The username and password are invalid text is displayed successfully
+2024-11-12 23:07:17 INFO  Log:15 - =====================================verifyInvalidUserandPwdtext TEST END=========================================
+2024-11-12 23:07:17 INFO  Log:11 - =====================================verifyInvalidUserandPwdtext TEST START=========================================
+2024-11-12 23:07:17 INFO  Log:22 - Verifying the username and password are invalid text is displayed
+2024-11-12 23:07:17 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:17 INFO  Log:22 - The admin@adfsfsdf is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:19 INFO  Log:22 - The admin@adfsfsdf is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:19 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:19 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:19 INFO  Log:22 - The 123.0 is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:21 INFO  Log:22 - The 123.0 is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:21 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:23 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:23 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:07:23 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:07:23 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:26 INFO  Log:22 - The username and password are invalid text is displayed successfully
+2024-11-12 23:07:26 INFO  Log:15 - =====================================verifyInvalidUserandPwdtext TEST END=========================================
+2024-11-12 23:07:26 INFO  Log:11 - =====================================verifyInvalidUserandPwdtext TEST START=========================================
+2024-11-12 23:07:26 INFO  Log:22 - Verifying the username and password are invalid text is displayed
+2024-11-12 23:07:26 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:26 INFO  Log:22 - The admin@ad123 is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:28 INFO  Log:22 - The admin@ad123 is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:28 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:28 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:28 INFO  Log:22 - The 123.0 is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:29 INFO  Log:22 - The 123.0 is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:29 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:31 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:32 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:07:32 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:07:32 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:35 INFO  Log:22 - The username and password are invalid text is displayed successfully
+2024-11-12 23:07:35 INFO  Log:15 - =====================================verifyInvalidUserandPwdtext TEST END=========================================
+2024-11-12 23:07:35 INFO  Log:11 - =====================================verifyLoginsuccess TEST START=========================================
+2024-11-12 23:07:35 INFO  Log:22 - Verifying the user has been logged in
+2024-11-12 23:07:35 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:35 INFO  Log:22 - The cjr@convergentechnologies.com is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:37 INFO  Log:22 - The cjr@convergentechnologies.com is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:07:37 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:37 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:07:37 INFO  Log:22 - The Test@123 is trying to enter for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:38 INFO  Log:22 - The Test@123 is entered successfully for the element [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //input[@formcontrolname='password']]
+2024-11-12 23:07:38 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:07:40 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:40 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:07:41 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:07:41 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:44 INFO  Log:22 - The user has been logged in successfully
+2024-11-12 23:07:44 INFO  Log:15 - =====================================verifyLoginsuccess TEST END=========================================
+2024-11-12 23:07:44 INFO  Log:11 - =====================================verifyUsernameText TEST START=========================================
+2024-11-12 23:07:44 INFO  Log:22 - Verifying the logged in username is displayed in the Home page
+2024-11-12 23:07:45 INFO  Log:22 - The logged in username is displayed successfully in the Home page
+2024-11-12 23:07:45 INFO  Log:15 - =====================================verifyUsernameText TEST END=========================================
+2024-11-12 23:07:45 INFO  Log:11 - =====================================verifyOrgDetailsText TEST START=========================================
+2024-11-12 23:07:45 INFO  Log:22 - Verifying the Organization details text is displayed in the Home page
+2024-11-12 23:07:45 INFO  Log:22 - The Organization details text is displayed successfully in the Home page
+2024-11-12 23:07:45 INFO  Log:15 - =====================================verifyOrgDetailsText TEST END=========================================
+2024-11-12 23:07:45 INFO  Log:11 - =====================================verifyOrganizationSidemenu TEST START=========================================
+2024-11-12 23:07:45 INFO  Log:22 - Verifying the Organization side menu in the Home page
+2024-11-12 23:07:45 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:45 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //*[@id='kt_aside_menu']/ul/li[1]/a/i[2]] is trying to click
+2024-11-12 23:07:46 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //*[@id='kt_aside_menu']/ul/li[1]/a/i[2]] is clicked successfully
+2024-11-12 23:07:46 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:46 INFO  Log:22 - The Organization side menu is verified successfully in the Home page
+2024-11-12 23:07:46 INFO  Log:15 - =====================================verifyOrganizationSidemenu TEST END=========================================
+2024-11-12 23:07:46 INFO  Log:11 - =====================================verifyOrganizationInfoSidemenu TEST START=========================================
+2024-11-12 23:07:46 INFO  Log:22 - Verifying the Organization Info side menu in the Home page
+2024-11-12 23:07:47 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:07:47 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //*[text()='Organisation Info']] is trying to click
+2024-11-12 23:07:47 INFO  Log:22 - The [[ChromeDriver: chrome on windows (d5a67c55c1259a20f51b88251fa950fa)] -> xpath: //*[text()='Organisation Info']] is clicked successfully
+2024-11-12 23:07:47 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:07:59 INFO  Log:22 - Executing the openBrowser keyword
+2024-11-12 23:07:59 INFO  Log:22 - The Chrome browser is opening
+2024-11-12 23:08:02 INFO  Log:22 - The Chrome browser is opened successfully
+2024-11-12 23:08:02 INFO  Log:22 - The openBrowser keyword executed successfully
+2024-11-12 23:08:02 INFO  Log:22 - Executing the openURL keyword
+2024-11-12 23:08:02 INFO  Log:22 - The url https://art-sit-admin.convergentechnologies.com/#/auth/login is opening
+2024-11-12 23:08:09 INFO  Log:22 - The url https://art-sit-admin.convergentechnologies.com/#/auth/login is opened successfully
+2024-11-12 23:08:09 INFO  Log:22 - The openURL keyword executed successfully
+2024-11-12 23:08:10 INFO  Log:11 - =====================================verifyAIroastamaniLogo TEST START=========================================
+2024-11-12 23:08:10 INFO  Log:22 - Verifying the AI Roastamani Logo is Displayed in the Login Page
+2024-11-12 23:08:10 INFO  Log:22 - The AI Roastamani Logo is Displayed successfully in the Login Page
+2024-11-12 23:08:10 INFO  Log:15 - =====================================verifyAIroastamaniLogo TEST END=========================================
+2024-11-12 23:08:10 INFO  Log:11 - =====================================verifyTitle TEST START=========================================
+2024-11-12 23:08:10 INFO  Log:22 - Verifying the Title "ART - ADMIN" of the page is displayed
+2024-11-12 23:08:10 INFO  Log:22 - The Title "ART - ADMIN" is displayed successfully
+2024-11-12 23:08:10 INFO  Log:15 - =====================================verifyTitle TEST END=========================================
+2024-11-12 23:08:10 INFO  Log:11 - =====================================verifyemailtext TEST START=========================================
+2024-11-12 23:08:10 INFO  Log:22 - Verifying the "Email" text is displayed in the username field
+2024-11-12 23:08:11 INFO  Log:22 - The "Email" text is displayed successfully in the username field
+2024-11-12 23:08:11 INFO  Log:15 - =====================================verifyemailtext TEST END=========================================
+2024-11-12 23:08:11 INFO  Log:11 - =====================================verifypasswordtext TEST START=========================================
+2024-11-12 23:08:11 INFO  Log:22 - Verifying the "password" text is displayed in the username field
+2024-11-12 23:08:11 INFO  Log:22 - The "password" text is displayed successfully in the username field
+2024-11-12 23:08:11 INFO  Log:15 - =====================================verifypasswordtext TEST END=========================================
+2024-11-12 23:08:11 INFO  Log:11 - =====================================verifyusrnameRequiredtext TEST START=========================================
+2024-11-12 23:08:11 INFO  Log:22 - Verifying the required field text is displayed for the username field
+2024-11-12 23:08:11 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:08:11 INFO  Log:22 - The [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:08:11 INFO  Log:22 - The [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:08:11 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:08:11 INFO  Log:22 - The required field text is displayed successfully for the username field
+2024-11-12 23:08:11 INFO  Log:15 - =====================================verifyusrnameRequiredtext TEST END=========================================
+2024-11-12 23:08:11 INFO  Log:11 - =====================================verifypasswordRequiredtext TEST START=========================================
+2024-11-12 23:08:11 INFO  Log:22 - Verifying the required field text is displayed for the password field
+2024-11-12 23:08:11 INFO  Log:22 - Executing the click keyword
+2024-11-12 23:08:11 INFO  Log:22 - The [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //button[@id='kt_login_signin_submit']] is trying to click
+2024-11-12 23:08:12 INFO  Log:22 - The [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //button[@id='kt_login_signin_submit']] is clicked successfully
+2024-11-12 23:08:12 INFO  Log:22 - The click keyword executed successfully
+2024-11-12 23:08:12 INFO  Log:22 - The required field text is displayed successfully for the password field
+2024-11-12 23:08:12 INFO  Log:15 - =====================================verifypasswordRequiredtext TEST END=========================================
+2024-11-12 23:08:14 INFO  Log:11 - =====================================verifyusernamenotvalidtext TEST START=========================================
+2024-11-12 23:08:14 INFO  Log:22 - Verifying the username not valid text is displayed for the username field
+2024-11-12 23:08:14 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:08:14 INFO  Log:22 - The admin is trying to enter for the element [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:08:21 INFO  Log:22 - The admin is entered successfully for the element [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //input[@formcontrolname='email']]
+2024-11-12 23:08:21 INFO  Log:22 - The enterData keyword executed successfully
+2024-11-12 23:08:23 INFO  Log:22 - The username not valid text is displayed successfully for the username field
+2024-11-12 23:08:23 INFO  Log:15 - =====================================verifyusernamenotvalidtext TEST END=========================================
+2024-11-12 23:08:23 INFO  Log:11 - =====================================verifyInvalidUserandPwdtext TEST START=========================================
+2024-11-12 23:08:23 INFO  Log:22 - Verifying the username and password are invalid text is displayed
+2024-11-12 23:08:23 INFO  Log:22 - Executing the enterData keyword
+2024-11-12 23:08:23 INFO  Log:22 - The admin@ad is trying to enter for the element [[ChromeDriver: chrome on windows (09b219f5994090f82631c879d15be420)] -> xpath: //input[@formcontrolname='email']]

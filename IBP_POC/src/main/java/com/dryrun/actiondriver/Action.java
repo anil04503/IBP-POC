@@ -72,15 +72,15 @@ public class Action extends BaseClass{
 		try {
 			Log.info("Executing the openHeadlessBrowser keyword");
 			Log.info("The headless " +browserName+ " browser is opening");
-		if(browserName.equalsIgnoreCase("Chrome")) {
+		if(browserName.equalsIgnoreCase("HeadlessChrome")) {
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("headless");
 			driver.set(new ChromeDriver(options));
-		}else if(browserName.equalsIgnoreCase("Firefox")) {
+		}else if(browserName.equalsIgnoreCase("HeadlessFirefox")) {
 			FirefoxOptions options =new FirefoxOptions();
 			options.addArguments("-headless");
 			driver.set(new FirefoxDriver(options));
-		}else if(browserName.equalsIgnoreCase("IE")) {
+		}else if(browserName.equalsIgnoreCase("HeadlessIE")) {
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("headless");
 			driver.set(new EdgeDriver(options));
