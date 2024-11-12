@@ -916,9 +916,9 @@ public static void clearData(WebElement ele) {
 			e.getMessage();
 		}
 		// This new path for jenkins
-		String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename + "_"
+		String newImageString = "http://localhost:8080/job/IBP_POC1/ws/IBP_POC/ScreenShots/" + filename + "_"
 				+ dateName + ".png";
-		return destination;
+		return newImageString;
 	}
 	public static String getCurrentTime() {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
