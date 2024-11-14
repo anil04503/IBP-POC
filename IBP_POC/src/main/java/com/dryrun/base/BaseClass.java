@@ -70,8 +70,7 @@ public class BaseClass {
 		}
 		Action.implicitWait(getDriver(), 60);
 		Action.pageLoadTimeOut(getDriver(), 60);
-		//Action.openURL(prop.getProperty("url"));
-		Action.openURL("url");
+		Action.openURL(prop.getProperty("url"));
 		getDriver().manage().window().maximize();
 	}
 	
