@@ -916,7 +916,7 @@ public static void clearData(WebElement ele) {
 			e.getMessage();
 		}
 		// This new path for jenkins
-		String newImageString = "http://localhost:8080/job/IBP_POC2/ws/IBP_POC/ScreenShots/" + filename + "_"
+		String newImageString = "IBP_POC/ScreenShots/" + filename + "_"
 				+ dateName + ".png";
 		return newImageString;
 	}
