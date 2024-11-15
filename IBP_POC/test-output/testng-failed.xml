@@ -7,15 +7,15 @@
   <test thread-count="5" name="Test_All(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.dryrun.testcases.HomePageTest">
+      <class name="com.dryrun.testcases.LoginPageTest">
         <methods>
           <include name="closeApp"/>
-          <include name="verifyNewsLetterSidemenu"/>
           <include name="afterSuite"/>
           <include name="launchApp"/>
           <include name="loadConfig"/>
+          <include name="verifyTitle"/>
         </methods>
-      </class> <!-- com.dryrun.testcases.HomePageTest -->
+      </class> <!-- com.dryrun.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->
