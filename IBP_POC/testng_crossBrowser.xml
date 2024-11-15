@@ -5,10 +5,10 @@
 <listener class-name="com.dryrun.utility.ListenerClass"></listener>
 </listeners>
   <test name="ChromeTest">
-  <parameter name="browser" value="Chrome"></parameter>
+  <!--<parameter name="browser" value="Chrome"></parameter>-->
     <classes>
       <class name="com.dryrun.testcases.LoginPageTest">
-      <methods>
+      <!--<methods>
     	<include name="verifyAIroastamaniLogo"/>
     	<include name="verifyTitle"/>
     	<include name="verifyemailtext"/>
@@ -18,18 +18,18 @@
     	<include name="verifyusernamenotvalidtext"/>
     	<include name="verifyInvalidUserandPwdtext"/>
     	<include name="verifyLoginsuccess"/>
-      </methods>
+      </methods>-->
       </class>
     </classes>
   </test> <!-- Test -->
    <test name="IETest">
-  <parameter name="browser" value="IE"></parameter>
+  <!--<parameter name="browser" value="IE"></parameter>-->
     <classes>
        <class name="com.dryrun.testcases.HomePageTest">
-      <methods>
+      <!--<methods>
       <include name="verifyUsernameText"/>
       <include name="verifyOrgDetailsText"/>
-      </methods>
+      </methods>-->
       </class>
     </classes>
   </test> <!-- Test -->

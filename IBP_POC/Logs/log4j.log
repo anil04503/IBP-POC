@@ -144,3 +144,27 @@
 2024-11-14 14:55:37 INFO  Log:15 - =====================================verifyDocControlSidemenu TEST END=========================================
 2024-11-14 14:55:37 INFO  Log:11 - =====================================verifyTaxMasterSidemenu TEST START=========================================
 2024-11-14 14:55:37 INFO  Log:22 - Verifying the Tax Master side menu in the Home page
+2024-11-15 13:58:28 INFO  Log:22 - Executing the openBrowser keyword
+2024-11-15 13:58:28 INFO  Log:22 - Executing the openBrowser keyword
+2024-11-15 13:58:28 INFO  Log:22 - The Chrome browser is opening
+2024-11-15 13:58:28 INFO  Log:22 - The IE browser is opening
+2024-11-15 13:58:34 INFO  Log:22 - The IE browser is opened successfully
+2024-11-15 13:58:34 INFO  Log:22 - The openBrowser keyword executed successfully
+2024-11-15 13:58:34 INFO  Log:22 - The Chrome browser is opened successfully
+2024-11-15 13:58:34 INFO  Log:22 - The openBrowser keyword executed successfully
+2024-11-15 13:58:34 INFO  Log:22 - Executing the openURL keyword
+2024-11-15 13:58:34 INFO  Log:22 - The url null is opening
+2024-11-15 13:58:34 INFO  Log:22 - The url null is not opened successfullynull
+2024-11-15 13:58:34 INFO  Log:22 - Executing the openURL keyword
+2024-11-15 13:58:34 INFO  Log:22 - The url null is opening
+2024-11-15 13:58:34 INFO  Log:22 - The openURL keyword not executed successfully
+2024-11-15 13:58:34 INFO  Log:22 - The url null is not opened successfullynull
+2024-11-15 13:58:34 INFO  Log:22 - The openURL keyword not executed successfully
+2024-11-15 13:58:34 INFO  Log:11 - =====================================verifyAIroastamaniLogo TEST START=========================================
+2024-11-15 13:58:34 INFO  Log:22 - Verifying the AI Roastamani Logo is Displayed in the Login Page
+2024-11-15 13:58:36 INFO  Log:11 - =====================================verifyUsernameText TEST START=========================================
+2024-11-15 13:58:36 INFO  Log:22 - Verifying the logged in username is displayed in the Home page
+2024-11-15 13:58:44 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-index.ftl"("en", UTF-8, parsed); will try to load it.
+2024-11-15 13:58:44 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index_en.ftl"): Not found
+2024-11-15 13:58:44 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index.ftl"): Found
+2024-11-15 13:58:44 DEBUG cache:45 - Loading template for "v3html/v3-html-index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/anilA/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-index.ftl"

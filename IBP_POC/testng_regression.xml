@@ -5,7 +5,7 @@
 <listener class-name="com.dryrun.utility.ListenerClass"></listener>
 </listeners>
   <test thread-count="5" name="Regresssion">
-  <parameter name="browser" value="Chrome"></parameter>
+  <!--<parameter name="browser" value="Chrome"></parameter>-->
   	<groups>
   		<run>
   			<include name="Regression"></include>

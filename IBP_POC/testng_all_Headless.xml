@@ -5,7 +5,7 @@
 <listener class-name="com.dryrun.utility.ListenerClass"></listener>
 </listeners>
   <test thread-count="5" name="Test_All">
-  <parameter name="browser" value="HeadlessChrome"></parameter>
+  <!--<parameter name="browser" value="HeadlessChrome"></parameter>-->
     <classes>
       <class name="com.dryrun.testcases.LoginPageTest"/>
       <class name="com.dryrun.testcases.HomePageTest"/>

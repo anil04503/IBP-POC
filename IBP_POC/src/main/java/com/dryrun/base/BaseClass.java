@@ -57,22 +57,35 @@ public class BaseClass {
 		}
 	}
 	
-	@Parameters("browser")
+	
 	@BeforeTest(groups = {"Smoke","Sanity","Regression"})
-	public static void launchApp(String browserName) {
-		if(!browserName.contains("Head"))
+	public static void launchApp() {
+		if(!System.getProperty("browser").contains("Head"))
 		{
-			Action.openBrowser(browserName);
+			Action.openBrowser(System.getProperty("browser"));
 		}
-		if(browserName.contains("Head"))
+		if(System.getProperty("browser").contains("Head"))
 		{
-			Action.openHeadlessBrowser(browserName);
+			Action.openHeadlessBrowser(System.getProperty("browser"));
 		}
 		Action.implicitWait(getDriver(), 60);
 		Action.pageLoadTimeOut(getDriver(), 60);
 		//Action.openURL(prop.getProperty("url"));
 		Action.openURL(System.getProperty("url"));
 		getDriver().manage().window().maximize();
+//		if(!browserName.contains("Head"))
+//		{
+//			Action.openBrowser(browserName);
+//		}
+//		if(browserName.contains("Head"))
+//		{
+//			Action.openHeadlessBrowser(browserName);
+//		}
+//		Action.implicitWait(getDriver(), 60);
+//		Action.pageLoadTimeOut(getDriver(), 60);
+//		//Action.openURL(prop.getProperty("url"));
+//		Action.openURL(System.getProperty("url"));
+//		getDriver().manage().window().maximize();
 	}
 	
 	@AfterTest(groups = {"Smoke","Sanity","Regression"})
