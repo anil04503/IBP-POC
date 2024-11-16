@@ -8,7 +8,7 @@
   <!--<parameter name="browser" value="Chrome"></parameter>-->
     <classes>
       <class name="com.dryrun.testcases.LoginPageTest"/>
-      <!--<class name="com.dryrun.testcases.HomePageTest"/>-->
+      <class name="com.dryrun.testcases.HomePageTest"/>
       <!--<class name="com.dryrun.testcases.EndtoEndTest"/>
       <class name="com.dryrun.testcases.IndexPageTest"/>-->
     </classes>
