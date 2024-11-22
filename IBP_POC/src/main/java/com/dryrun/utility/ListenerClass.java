@@ -21,7 +21,7 @@ public class ListenerClass extends ExtentManager implements ITestListener {
 	
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getName());
-		test.createNode(result.getName());
+		//test.createNode(result.getName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
