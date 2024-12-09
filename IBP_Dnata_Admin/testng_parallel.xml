@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowser" parallel="tests" thread-count="5">
+<listeners>
+<listener class-name="dnata.admin.utility.ListenerClass"></listener>
+</listeners>
+  <test name="ChromeTest">
+  <!--<parameter name="browser" value="Chrome"></parameter>-->
+    <classes>
+      <class name="dnata.admin.testcases.LoginPageTest">
+      <!--<methods>
+    	<include name="verifyAIroastamaniLogo"/>
+    	<include name="verifyTitle"/>
+    	<include name="verifyemailtext"/>
+     	<include name="verifypasswordtext"/>
+    	<include name="verifyusrnameRequiredtext"/>
+     	<include name="verifypasswordRequiredtext"/>
+    	<include name="verifyusernamenotvalidtext"/>
+    	<include name="verifyInvalidUserandPwdtext"/>
+    	<include name="verifyLoginsuccess"/>
+      </methods>-->
+      </class>
+    </classes>
+  </test> <!-- Test -->
+   <test name="IETest">
+  <!--<parameter name="browser" value="IE"></parameter>-->
+    <classes>
+       <class name="dnata.admin.testcases.HomePageTest">
+      <!--<methods>
+      <include name="verifyUsernameText"/>
+      <include name="verifyOrgDetailsText"/>
+      </methods>-->
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+   <!--<test name="ChromeTest1">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="dnata.admin.testcases.EndtoEndTest"/>
+    </classes>
+  </test>--> <!-- Test -->
+  
+</suite> <!-- Suite -->

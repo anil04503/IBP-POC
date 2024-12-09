@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="dnata.admin.utility.ListenerClass"></listener>
+</listeners>
+  <test thread-count="5" name="Test_All">
+  <!--<parameter name="browser" value="HeadlessChrome"></parameter>-->
+    <classes>
+      <class name="dnata.admin.testcases.LoginPageTest"/>
+      <class name="dnata.admin.testcases.HomePageTest"/>
+      <!--<class name="dnata.admin.testcases.EndtoEndTest"/>
+      <class name="dnata.admin.testcases.IndexPageTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
