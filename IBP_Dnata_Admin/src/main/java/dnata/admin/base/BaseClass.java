@@ -60,6 +60,7 @@ public class BaseClass {
 	@BeforeTest(groups = {"Smoke","Sanity","Regression"})
 	public static void launchApp() {
 		Action.openBrowser("Chrome");
+		//Action.openHeadlessBrowser("HeadlessChrome");
 		//Action.implicitWait(60);
 		Action.pageLoadWait(60);
 		Action.openURL(prop.getProperty("url"));

@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test_All(failed)">
     <classes>
-      <class name="dnata.admin.testcases.LoginPageTest">
+      <class name="dnata.admin.testcases.CompanyListTest">
         <methods>
           <include name="afterSuite"/>
           <include name="closeApp"/>
+          <include name="verifyCompanyUserCreationAssignRole" invocation-numbers="0"/>
           <include name="launchApp"/>
-          <include name="verifyLoginSuccess" invocation-numbers="0"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- dnata.admin.testcases.LoginPageTest -->
+      </class> <!-- dnata.admin.testcases.CompanyListTest -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

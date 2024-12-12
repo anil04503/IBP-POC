@@ -9,7 +9,16 @@
     <classes>
       <class name="dnata.admin.testcases.LoginPageTest"/>
       <class name="dnata.admin.testcases.HomePageTest"/>
-      <class name="dnata.admin.testcases.CompanyListTest"/>
+      <class name="dnata.admin.testcases.CompanyListTest">
+       <methods>
+       <!--<include name="verifyBranchCompanyCreation"/>-->
+       <!--<include name="verifyB2BCompanyCreation"/>-->
+       <!--<include name="VerifyProductConfigurationSetup"/>
+       <include name="VerifyCarRentalServiceChargeSetup"/>
+       <include name="verifyCompanyUserCreation"/>-->
+       <include name="verifyCompanyUserCreationAssignRole"/>
+      </methods>
+      </class>
       <!--<class name="dnata.admin.testcases.EndtoEndTest"/>
       <class name="dnata.admin.testcases.IndexPageTest"/>-->
     </classes>

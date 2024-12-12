@@ -58,31 +58,31 @@ public class HomePage extends BaseClass {
 	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div/div/div[3]")
 	List<WebElement> orgdetailsParavalueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[1]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[1]/div/div[3]")
 	WebElement orgdetailsNameValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[2]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[2]/div/div[3]")
 	WebElement orgdetailsShortNameValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[3]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[3]/div/div[3]")
 	WebElement orgdetailsCountryValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[4]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[4]/div/div[3]")
 	WebElement orgdetailsCityValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[5]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[5]/div/div[3]")
 	WebElement orgdetailsZipcodeValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[6]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[6]/div/div[3]")
 	WebElement orgdetailsAddressValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[7]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[7]/div/div[3]")
 	WebElement orgdetailsPhoneNoValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[8]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[8]/div/div[3]")
 	WebElement orgdetailsEmailValueText;
 	
-	@FindBy(xpath = "//*[@id='kt_content']/div/kt-org-update/div/div[2]/div[9]/div/div[3]")
+	@FindBy(xpath = "//div[@class='container']/div[2]/div[9]/div/div[3]")
 	WebElement orgdetailsWebsiteValueText;
 	
 	@FindBy(xpath = "//*[@id=\"kt_aside_menu\"]/ul/li[6]/a/i")

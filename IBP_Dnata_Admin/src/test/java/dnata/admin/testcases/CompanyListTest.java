@@ -4,6 +4,7 @@
 package dnata.admin.testcases;
 
 
+import java.awt.AWTException;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -33,7 +34,7 @@ public class CompanyListTest extends BaseClass{
 
 	
 	@Test(priority = 0, dataProvider = "branchaddcompany", dataProviderClass = DataProviders.class, groups = "Smoke")
-	public void verifyBranchCompanyCreation(HashMap<String,String> hashMapValue) throws InterruptedException {
+	public void verifyBranchCompanyCreation(HashMap<String,String> hashMapValue) throws InterruptedException{
 		complistpage = new CompanyListPage();
 		random = new Random();
 		Log.startTestCase("verifyBranchCompanyCreation");
@@ -65,11 +66,12 @@ public class CompanyListTest extends BaseClass{
 		complistpage.selectChannelName(hashMapValue.get("Channel Name"));
 		complistpage.enterAccountCode(hashMapValue.get("Account Code"));
 		complistpage.selectLimit(hashMapValue.get("Limit Type"));
-		complistpage.logoUpload(System.getProperty("user.dir") + "\\AutoIT\\UploadFile.exe");
-		complistpage.companyDocUpload(System.getProperty("user.dir") + "\\AutoIT\\UploadFile.exe");
+		complistpage.logoUpload(System.getProperty("user.dir") + "\\Logo\\jpg.jpg");
+		complistpage.companyDocUpload(System.getProperty("user.dir") + "\\Logo\\jpg.jpg");
 		complistpage.clickSave();
 		String successText = complistpage.getSuccessText();
 		Assert.assertEquals(successText,prop.getProperty("savedsuccessfully"));
+		complistpage.clickSuccessText();
 		complistpage.clickFirstTMCexpandButton();
 		branchCompany = complistpage.getCompanyCrationText(name);
 		complistpage.clickFirstTMCexpandButton();
@@ -111,16 +113,124 @@ public class CompanyListTest extends BaseClass{
 		complistpage.selectChannelName(hashMapValue.get("Channel Name"));
 		complistpage.enterAccountCode(hashMapValue.get("Account Code"));
 		complistpage.selectLimit(hashMapValue.get("Limit Type"));
-		complistpage.logoUpload(System.getProperty("user.dir") + "\\AutoIT\\UploadFile.exe");
-		complistpage.companyDocUpload(System.getProperty("user.dir") + "\\AutoIT\\UploadFile.exe");
+		complistpage.logoUpload(System.getProperty("user.dir") + "\\Logo\\jpg.jpg");
+		complistpage.companyDocUpload(System.getProperty("user.dir") + "\\Logo\\jpg.jpg");
 		complistpage.clickSave();
 		String successText = complistpage.getSuccessText();
 		Assert.assertEquals(successText,prop.getProperty("savedsuccessfully"));
+		complistpage.clickSuccessText();
 		complistpage.clickFirstTMCexpandButton();
 		B2BCompany = complistpage.getCompanyCrationText(name);
 		Assert.assertEquals(B2BCompany,name);
 		Log.info("The user successfully created the B2B Company");
 		Log.endTestCase("verifyB2BCompanyCreation");
+		}
+	
+	@Test(priority = 2, groups = "Smoke")
+	public void VerifyProductConfigurationSetup() throws InterruptedException {
+		complistpage = new CompanyListPage();
+		Log.startTestCase("VerifyProductConfigurationSetup");
+		Log.info("Adding the Product Configuration to the Company created");
+		complistpage.clickCompanyCreation(B2BCompany);
+		complistpage.clickProductConfigGearIcon();
+		complistpage.clickAddNewButton();
+		complistpage.clickProductConfigRailCheckbox();
+		complistpage.clickProductConfigCarRentalCheckbox();
+		complistpage.clickProductConfigResortsandToursCheckbox();
+		complistpage.clickSaveButton();
+		String successText = complistpage.getSuccessText();
+		Assert.assertEquals(successText,prop.getProperty("savedsuccessfully"));
+		complistpage.clickSuccessText();
+		String railText = complistpage.getProductConfigAddedText(prop.getProperty("railtext"));
+		Assert.assertEquals(railText,prop.getProperty("railtext"));
+		String carRentalText = complistpage.getProductConfigAddedText(prop.getProperty("carrentaltext"));
+		Assert.assertEquals(carRentalText,prop.getProperty("carrentaltext"));
+		String resortsAndToursText = complistpage.getProductConfigAddedText(prop.getProperty("resortsandtourstext"));
+		Assert.assertEquals(resortsAndToursText,prop.getProperty("resortsandtourstext"));
+		complistpage.clickCloseButton();
+		Log.info("The user successfully added the Product Configuration to the Company created");
+		Log.endTestCase("VerifyProductConfigurationSetup");
+		}
+	
+	@Test(priority = 3, groups = "Smoke")
+	public void VerifyCarRentalServiceChargeSetup() throws InterruptedException {
+		complistpage = new CompanyListPage();
+		Log.startTestCase("VerifyCarRentalServiceChargeSetup");
+		Log.info("Adding the Car Rental serive charge to the Company created");
+		complistpage.clickServiceChargeGearIcon();
+		complistpage.clickServiceChargeCarRentalButton();
+		complistpage.clickAddNewButton();
+		complistpage.clickServiceChargeTemplateCheckbox(prop.getProperty("newrulemarantext"));
+		complistpage.clickSaveButton();
+		String successText = complistpage.getSuccessText();
+		Assert.assertEquals(successText,prop.getProperty("savedsuccessfully"));
+		complistpage.clickSuccessText();
+		String serviceChargeTemp = complistpage.getServiceChargeAddedText(prop.getProperty("newrulemarantext"));
+		Assert.assertEquals(serviceChargeTemp,prop.getProperty("newrulemarantext"));
+		complistpage.clickCloseButton();
+		Log.info("The user successfully added the Car Rental service charge to the Company created");
+		Log.endTestCase("VerifyCarRentalServiceChargeSetup");
+		}
+	
+	@Test(priority = 4, dataProvider = "compUserCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	public void verifyCompanyUserCreation(HashMap<String,String> hashMapValue) throws InterruptedException {
+		complistpage = new CompanyListPage();
+		random = new Random();
+		Log.startTestCase("verifyCompanyUserCreation");
+		Log.info("Verifying the user can be able to create the Company User");
+		String lastName = hashMapValue.get("Last Name")+random.nextInt(10000);
+		complistpage.clickuserCreationIcon();
+		complistpage.clickAddNewButton();
+		complistpage.clickuserCreationSalutationDropdown();
+		complistpage.selectuserCreationSalutation(hashMapValue.get("Salutation"));
+		System.out.println(hashMapValue.get("Salutation"));
+		complistpage.enterUserCreationFirstname(hashMapValue.get("First Name"));
+		complistpage.enterUserCreationLastname(lastName);
+		String email = random.nextInt(10000)+hashMapValue.get("Email");
+		complistpage.enterUserCreationEmail(email);
+		complistpage.enterUserCreationPassword(hashMapValue.get("Password"));
+		complistpage.enterUserCreationOfficephone(hashMapValue.get("Office Phone"));
+		complistpage.clickSave();
+		String successText = complistpage.getuserCreationSuccessText();
+		Assert.assertEquals(successText,prop.getProperty("successtext"));
+		complistpage.clickuserCreationSuccessText();
+		String firstName = complistpage.getUserCreationFirstnameText(hashMapValue.get("First Name"));
+		Assert.assertEquals(firstName,hashMapValue.get("First Name"));
+		String lastname = complistpage.getUserCreationLastnameText(lastName);
+		Assert.assertEquals(lastname,lastName);
+		complistpage.clickCloseButton();
+		Log.info("The user successfully created the Company User");
+		Log.endTestCase("verifyCompanyUserCreation");
+		}
+	
+	@Test(priority = 5, dataProvider = "compUserCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	public void verifyCompanyUserCreationAssignRole(HashMap<String,String> hashMapValue) throws InterruptedException {
+		complistpage = new CompanyListPage();
+		random = new Random();
+		Log.startTestCase("verifyCompanyUserCreationAssignRole");
+		Log.info("Verifying the user can be able to create the Company User and Assign a Role");
+		complistpage.clickuserCreationAssignRoleIcon();
+		complistpage.clickuserCreationAssignRoleButton();
+		complistpage.clickuserCreationRoleDropdown();
+		complistpage.selectuserCreationRoleOption(hashMapValue.get("Role"));
+		complistpage.selectUserRoleModule(hashMapValue.get("Module"));
+		complistpage.clickSave();
+		String successText = complistpage.getSuccessText();
+		Assert.assertEquals(successText,prop.getProperty("savedsuccessfully"));
+		complistpage.clickSuccessText();
+		String module = hashMapValue.get("Module");
+		String[] moduleText = module.split("[,]",0);
+		for(int i=0;i<moduleText.length;i++) {
+            String moduletext = complistpage.getUserCreationModuleText(moduleText[i]);
+            System.out.println(moduletext);
+            System.out.println(moduleText[i]);
+            Assert.assertEquals(moduletext,moduleText[i]);
+            String roletext = complistpage.getUserCreationRoleText(moduleText[i]);
+            Assert.assertEquals(roletext,hashMapValue.get("Role"));
+         }
+		complistpage.clickCloseButton();
+		Log.info("The user successfully created the Company User and Assigned a Role");
+		Log.endTestCase("verifyCompanyUserCreationAssignRole");
 		}
 	
 

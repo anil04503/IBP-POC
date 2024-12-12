@@ -3,11 +3,17 @@
  */
 package dnata.admin.pageobjects;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -15,6 +21,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import dnata.admin.actiondriver.Action;
 import dnata.admin.base.BaseClass;
+import dnata.admin.utility.Log;
 
 /**
  * 
@@ -61,6 +68,9 @@ public class CompanyListPage extends BaseClass {
 	@FindBy(xpath = "//*[@role='listbox']/mat-option")
 	List<WebElement> addCompanyCompTypeOptions;
 	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement createCompdropdownOptionsListElement;
+	
 	@FindBy(xpath = "//mat-select[@formcontrolname='country']/div/div[2]")
 	WebElement addCompanyCountryDropdownButton;
 	
@@ -97,10 +107,10 @@ public class CompanyListPage extends BaseClass {
 	@FindBy(xpath = "//*[@role='listbox']/mat-option")
 	List<WebElement> addCompanyChannelNameOptions;
 	
-	@FindBy(xpath = "//*[@class='form-control form-control1 ng-star-inserted']")
+	@FindBy(xpath = "//*[label[text()='Logo']]/input[@type='file']")
 	WebElement addCompanylogoChooseFileButton;
 	
-	@FindBy(xpath = "//*[@class='form-control form-control1']")
+	@FindBy(xpath = "//*[label[text()='Company Document Logo']]/div/input[@type='file']")
 	WebElement addcompanyDocChooseFileButton;
 	
 	@FindBy(xpath = "//*[text()=' Save ']")
@@ -112,14 +122,133 @@ public class CompanyListPage extends BaseClass {
 	@FindBy(xpath = "//*[@value='Fixed']")
 	WebElement addcompanyFixedRadioButton;
 	
-	@FindBy(xpath = "//*[contains(text(),'Saved successfully')]")
+	@FindBy(xpath = "//*[text()=' Saved successfully ']")
 	WebElement addcompanySavedSuccessfullyText;
+	
+	@FindBy(xpath = "//*[text()=' success ']")
+	WebElement compUserCreationSuccessText;
 	
 	@FindBy(xpath = "//div[@class='containers-left']/div/p-tree/div/div[@class='p-tree-wrapper ng-star-inserted']/ul/p-treenode/li[1]/div/button")
 	WebElement firstTMCcompanyOptionExpandButton;
 	
 	@FindBy(xpath = "//*[@role='group']/p-treenode")
 	List<WebElement> createdCompanyList;
+	
+	@FindBy(xpath = "//*[@role='group']/p-treenode")
+	WebElement createdCompanyListElement;
+	
+	@FindBy(xpath = "//button[@title='Product Configuration']")
+	WebElement productConfigGeariconButton;
+	
+	@FindBy(xpath = "//*[text()='Add new']")
+	WebElement productConfigAddNewButton;
+	
+	@FindBy(xpath = "//input[@name='Rail']")
+	WebElement productConfigRailCheckbox;
+	
+	@FindBy(xpath = "//input[@name='Car Rental']")
+	WebElement productConfigCarRentalCheckbox;
+	
+	@FindBy(xpath = "//input[@name='Resorts & Tours']")
+	WebElement productConfigResortandToursCheckbox;
+	
+	@FindBy(xpath = "//button[text()=' Save ']")
+	WebElement productConfigSaveButton;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	List<WebElement> productConfigNameList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	WebElement productConfigNameListElement;
+	
+	@FindBy(xpath = "//div[contains(@class,'modal-header')]/button")
+	WebElement productConfigCloseButton;
+	
+	@FindBy(xpath = "//button[@title='Service Charge']")
+	WebElement serviceChargeGeariconButton;
+	
+	@FindBy(xpath = "//*[text()='CarRental']")
+	WebElement serviceChargeCarRentalButton;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[2]")
+	List<WebElement> serviceChargeNameList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[2]")
+	WebElement serviceChargeNameListElement;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	List<WebElement> serviceChargeNameCheckboxList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	WebElement serviceChargeNameCheckboxListElement;
+	
+	@FindBy(xpath = "//*[@title='User Creation']")
+	WebElement userCreationiconButton;
+	
+	@FindBy(xpath = "//mat-select[@formcontrolname='salutation']/div/div[2]")
+	WebElement userCreationSalutationDropdownButton;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	List<WebElement> userCreationsalutationOptions;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement userCreationsalutationOptionsElement;
+	
+	@FindBy(id = "firstname")
+	WebElement userCreationFristnameInput;
+	
+	@FindBy(id = "lastname")
+	WebElement userCreationLastnameInput;
+	
+	@FindBy(id = "email")
+	WebElement userCreationEmailInput;
+	
+	@FindBy(id = "password")
+	WebElement userCreationPasswordInput;
+	
+	@FindBy(xpath = "//*[@formcontrolname='officePhone']")
+	WebElement userCreationOfficePhoneInput;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[2]")
+	List<WebElement> userCreationLastNameList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	List<WebElement> userCreationFirstNameList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	WebElement userCreationFirstNameListElement;
+	
+	@FindBy(xpath = "//*[text()='person_add']")
+	WebElement userCreationAssignRoleIcon;
+	
+	@FindBy(xpath = "//*[text()='Assign Role']")
+	WebElement userCreationAssignRoleButton;
+	
+	@FindBy(xpath = "//*[@id='role']/div/div[2]")
+	WebElement userCreationAssignRoleDropdownbutton;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement userCreationAssignRoleOptionsElement;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	List<WebElement> userCreationAssignRoleOptions;
+	
+	@FindBy(xpath = "//*[text()=' ADMIN ']")
+	WebElement userCreationAssignRoleModuleAdmin;
+	
+	@FindBy(xpath = "//*[text()=' B2B ']")
+	WebElement userCreationAssignRoleModuleB2B;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[2]")
+	List<WebElement> userCreationModuleList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	List<WebElement> userCreationRoleList;
+	
+	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
+	WebElement userCreationRoleListElement;
+	
+	
 	
 	
 	
@@ -185,7 +314,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectCopanyType(String companytype) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyCompTypeOptions, companytype);
 	}
 	
@@ -195,7 +324,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectBranch(String branch) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyBranchOptions, branch);
 	}
 	
@@ -205,7 +334,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectCountry(String country) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyCountryOptions, country);
 	}
 	
@@ -215,7 +344,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectMobileCode(String mobilecode) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyMobileCodeOptions, mobilecode);
 	}
 	
@@ -225,7 +354,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectBOprovider(String boProvider) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyBOproviderOptions, boProvider);
 	}
 	
@@ -235,7 +364,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectCustomerGroup(String customerGrp) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyCustomerGroupOptions, customerGrp);
 	}
 	
@@ -245,7 +374,7 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectChannelName(String channelName) throws InterruptedException {
-		Thread.sleep(1000);
+		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
 		Action.clickfromList(addCompanyChannelNameOptions, channelName);
 	}
 	
@@ -254,20 +383,16 @@ public class CompanyListPage extends BaseClass {
 		Action.enterData(addCompanyAccountCodeInput, accountcode);
 	}
 	
-	public void logoUpload(String file) throws InterruptedException {
+	public void logoUpload(String file) throws InterruptedException{
 		Action.explicitWaitVisibility(addCompanylogoChooseFileButton, 20);
-		Action.click(addCompanylogoChooseFileButton);
-		Thread.sleep(2000);
-		Action.uploadFileAutoIT(file);
-		Thread.sleep(2000);
+		Action.enterData(addCompanylogoChooseFileButton, file);
+		Thread.sleep(3000);
 	}
 	
-	public void companyDocUpload(String file) throws InterruptedException {
+	public void companyDocUpload(String file) throws InterruptedException{
 		Action.explicitWaitVisibility(addcompanyDocChooseFileButton, 20);
-		Action.click(addcompanyDocChooseFileButton);
-		Thread.sleep(2000);
-		Action.uploadFileAutoIT(file);
-		Thread.sleep(2000);
+		Action.enterData(addcompanyDocChooseFileButton, file);
+		Thread.sleep(3000);
 	}
 	
 	public void clickSave() {
@@ -276,13 +401,15 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectLimit(String limit) {
-		Action.explicitWaitVisibility(addcompanyNoLimitRadioButton, 20);
+		
 		if(limit.equals("No Limit"))
 		{
+			Action.explicitWaitVisibility(addcompanyNoLimitRadioButton, 20);
 			Action.click(addcompanyNoLimitRadioButton);
 		}
 		else if(limit.equals("Fixed"))
 		{
+			Action.explicitWaitVisibility(addcompanyFixedRadioButton, 20);
 			Action.click(addcompanyFixedRadioButton);
 		}	
 	}
@@ -293,15 +420,227 @@ public class CompanyListPage extends BaseClass {
 		return success;
 	}
 	
+	public void clickSuccessText() throws InterruptedException {
+		Action.explicitWaitVisibility(addcompanySavedSuccessfullyText, 20);
+		Action.click(addcompanySavedSuccessfullyText);
+		Thread.sleep(2000);
+	}
+	
 	public void clickFirstTMCexpandButton() {
 		Action.explicitWaitVisibility(firstTMCcompanyOptionExpandButton, 20);
 		Action.click(firstTMCcompanyOptionExpandButton);
 	}
 	
-	public String getCompanyCrationText(String compyCreation) {
+	public String getCompanyCrationText(String compyCreation) throws InterruptedException {
+		Action.explicitWaitVisibility(createdCompanyListElement, 20);
 		String compCreationText = Action.getTextfromList(createdCompanyList, compyCreation);
 		return compCreationText;
 	}
+	
+	public void clickCompanyCreation(String compyCreation) {
+		Action.explicitWaitVisibility(createdCompanyListElement, 20);
+		Action.clickfromList(createdCompanyList, compyCreation);
+	}
+	
+	public void clickProductConfigGearIcon() {
+		Action.explicitWaitVisibility(productConfigGeariconButton, 20);
+		Action.click(productConfigGeariconButton);
+	}
+	
+	public void clickAddNewButton() {
+		Action.explicitWaitVisibility(productConfigAddNewButton, 20);
+		Action.click(productConfigAddNewButton);
+	}
+	
+	public void clickProductConfigRailCheckbox() {
+		Action.explicitWaitVisibility(productConfigRailCheckbox, 20);
+		Action.click(productConfigRailCheckbox);
+	}
+	
+	public void clickProductConfigCarRentalCheckbox() {
+		Action.explicitWaitVisibility(productConfigCarRentalCheckbox, 20);
+		Action.click(productConfigCarRentalCheckbox);
+	}
+	
+	public void clickProductConfigResortsandToursCheckbox() {
+		Action.explicitWaitVisibility(productConfigResortandToursCheckbox, 20);
+		Action.click(productConfigResortandToursCheckbox);
+	}
+	
+	public void clickSaveButton() {
+		Action.explicitWaitVisibility(productConfigSaveButton, 20);
+		Action.click(productConfigSaveButton);
+	}
+	
+	public String getProductConfigAddedText(String productConfig) throws InterruptedException {
+		Action.explicitWaitVisibility(productConfigNameListElement, 20);
+		String productConfigText = Action.getTextfromList(productConfigNameList, productConfig);
+		return productConfigText;
+	}
+	
+	public void clickCloseButton() throws InterruptedException {
+		Action.explicitWaitVisibility(productConfigCloseButton, 20);
+		Action.click(productConfigCloseButton);
+		Thread.sleep(2000);	
+	}
+	
+	public void clickServiceChargeGearIcon() {
+		Action.explicitWaitVisibility(serviceChargeGeariconButton, 20);
+		Action.click(serviceChargeGeariconButton);
+	}
+	
+	public void clickServiceChargeCarRentalButton() {
+		Action.explicitWaitVisibility(serviceChargeCarRentalButton, 20);
+		Action.click(serviceChargeCarRentalButton);
+	}
+	
+	public void clickServiceChargeTemplateCheckbox(String serviceChargeTemplate) throws InterruptedException {
+		Action.explicitWaitVisibility(serviceChargeNameListElement, 20);	
+    	for (int i=0;i<serviceChargeNameList.size();i++) {
+    		String serviceChargeTemp = serviceChargeNameList.get(i).getText();
+    		Log.info(serviceChargeTemp);
+    	    if(serviceChargeTemp.equals(serviceChargeTemplate))
+    	    {
+    	    	serviceChargeNameCheckboxList.get(i).click();
+    	    	Log.info("The checkbox clicked");
+    	    	break;
+    	    }
+    	}
+	}
+	
+	public String getServiceChargeAddedText(String serviceCharge) throws InterruptedException {
+		Action.explicitWaitVisibility(serviceChargeNameCheckboxListElement, 20);
+		String serviceChargeText = Action.getTextfromList(serviceChargeNameCheckboxList, serviceCharge);
+		return serviceChargeText;
+	}
+	
+	public void clickuserCreationIcon() {
+		Action.explicitWaitVisibility(userCreationiconButton, 20);
+		Action.click(userCreationiconButton);
+	}
+	
+	public void clickuserCreationSalutationDropdown() {
+		Action.explicitWaitVisibility(userCreationSalutationDropdownButton, 20);
+		Action.click(userCreationSalutationDropdownButton);
+	}
+	
+	public void selectuserCreationSalutation(String salutation) throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationsalutationOptionsElement, 20);
+		Action.clickfromList(userCreationsalutationOptions, salutation);
+	}
+	
+	public void enterUserCreationFirstname(String firstname) {
+		Action.explicitWaitVisibility(userCreationFristnameInput, 20);
+		Action.enterData(userCreationFristnameInput, firstname);
+	}
+	
+	public void enterUserCreationLastname(String lastname) {
+		Action.explicitWaitVisibility(userCreationLastnameInput, 20);
+		Action.enterData(userCreationLastnameInput, lastname);
+	}
+	
+	public void enterUserCreationEmail(String email) {
+		Action.explicitWaitVisibility(userCreationEmailInput, 20);
+		Action.enterData(userCreationEmailInput, email);
+	}
+	
+	public void enterUserCreationPassword(String password) {
+		Action.explicitWaitVisibility(userCreationPasswordInput, 20);
+		Action.enterData(userCreationPasswordInput, password);
+	}
+	
+	public void enterUserCreationOfficephone(String phone) {
+		Action.explicitWaitVisibility(userCreationOfficePhoneInput, 20);
+		Action.enterData(userCreationOfficePhoneInput, phone);
+	}
+	
+	public String getUserCreationFirstnameText(String firstname) throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationFirstNameListElement, 20);
+		String firstName = Action.getTextfromList(userCreationFirstNameList, firstname);
+		return firstName;
+	}
+	
+	public String getUserCreationLastnameText(String lastname) throws InterruptedException {
+		String lastName = Action.getTextfromList(userCreationLastNameList, lastname);
+		return lastName;
+	}
+	
+	public String getuserCreationSuccessText() {
+		Action.explicitWaitVisibility(compUserCreationSuccessText, 20);
+		String success = Action.getText(compUserCreationSuccessText);
+		return success;
+	}
+	
+	public void clickuserCreationSuccessText() throws InterruptedException {
+		Action.explicitWaitVisibility(compUserCreationSuccessText, 20);
+		Action.click(compUserCreationSuccessText);
+		Thread.sleep(2000);
+	}
+	
+	public void clickuserCreationAssignRoleIcon() throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationAssignRoleIcon, 20);
+		Action.click(userCreationAssignRoleIcon);
+	}
+	
+	public void clickuserCreationAssignRoleButton() throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationAssignRoleButton, 20);
+		Action.click(userCreationAssignRoleButton);
+	}
+	
+	public void clickuserCreationRoleDropdown() throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationAssignRoleDropdownbutton, 20);
+		Action.click(userCreationAssignRoleDropdownbutton);
+	}
+	
+	public void selectuserCreationRoleOption(String role) throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationAssignRoleOptionsElement, 20);
+		Action.clickfromList(userCreationAssignRoleOptions, role);
+	}
+	
+	public void selectUserRoleModule(String module) {
+		
+		if(module.equals("ADMIN"))
+		{
+			Action.explicitWaitVisibility(userCreationAssignRoleModuleAdmin, 20);
+			Action.click(userCreationAssignRoleModuleAdmin);
+		}
+		else if(module.equals("B2B"))
+		{
+			Action.explicitWaitVisibility(userCreationAssignRoleModuleB2B, 20);
+			Action.click(userCreationAssignRoleModuleB2B);
+		}
+		else if(module.equals("ADMIN,B2B"))
+		{
+			Action.explicitWaitVisibility(userCreationAssignRoleModuleB2B, 20);
+			Action.click(userCreationAssignRoleModuleAdmin);
+			Action.click(userCreationAssignRoleModuleB2B);
+		}	
+	}
+	
+	public String getUserCreationModuleText(String module) throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationRoleListElement, 20);
+		String moduleText = Action.getTextfromList(userCreationModuleList, module);
+		return moduleText;
+	}
+	
+	public String getUserCreationRoleText(String module) throws InterruptedException {
+		Action.explicitWaitVisibility(userCreationRoleListElement, 20);
+		String role=null;
+		for(int i=0;i<userCreationModuleList.size();i++)
+		{
+			String moduleText = userCreationModuleList.get(i).getText();
+			Log.info(moduleText);
+    	    if(moduleText.equals(module))
+    	    {
+    	    	role = userCreationRoleList.get(i).getText();
+    	    	Log.info("The role is "+role);
+    	    	break;
+    	    }
+		}
+		return role;
+	}
+	
+	
 	
 
 	

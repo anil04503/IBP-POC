@@ -25,7 +25,7 @@ public class LoginPageTest extends BaseClass{
 	
 	
 	@Test(priority = 0, dataProvider = "ValidUserandPwd", dataProviderClass = DataProviders.class, groups = "Smoke")
-	public void verifyLoginSuccess(HashMap<String,String> hashMapValue) {
+	public void verifyLoginSuccess(HashMap<String,String> hashMapValue) throws InterruptedException {
 		loginpage = new LoginPage();
 		Log.startTestCase("verifyLoginSuccess");
 		Log.info("Verifying the Application is logged in successfully");
@@ -36,6 +36,7 @@ public class LoginPageTest extends BaseClass{
 		loginpage.clickSiginButton();
 		loginpage.clickYesButton();
 		String title = Action.getTitle();
+		System.out.println(title);
 		Assert.assertEquals(title, prop.getProperty("title"));
 		Log.info("The Applicaton is logged in successfully");
 		Log.endTestCase("verifyLoginSuccess");

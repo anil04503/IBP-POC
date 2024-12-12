@@ -3,6 +3,7 @@
  */
 package dnata.admin.actiondriver;
 
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -31,7 +32,9 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
+import org.w3c.dom.Document;
 
 import dnata.admin.base.BaseClass;
 import dnata.admin.utility.Log;
@@ -466,22 +469,25 @@ public class Action extends BaseClass{
 			Log.info("Executing the getTextfromList keyword");
 			Log.info("Getting the text for the list of elements for the "+ele);
 			for(i =0;i<ele.size();i++) {
+			Actions act = new Actions(getDriver());
+			act.moveToElement(ele.get(i)).build().perform();
 			elementText = ele.get(i).getText();
+			Log.info(elementText);
 			 if(elementText.equals(text))
 			 {
-				 Log.info("The expected text is fetched successfully for the element");
+				 Log.info("The expected text " +text+ "is fetched successfully for the element");
 				 break;
 			 }
 			 else if(i==ele.size()-1)
 			 {
-				 Log.info("The expected text is not displayed in the list");
+				 Log.info("The expected text " +text+ " is not displayed in the list");
 			 }
 			}
 			
 			Log.info("The getTextfromList keyword executed successfully");
 		}
 		catch(Throwable t) {
-			Log.info("The text has been not fetched successfully for the element "+t.getMessage());
+			Log.info("The text "+text+" has been not fetched successfully for the element "+t.getMessage());
 			Log.info("The getTextfromList keyword not executed successfully");
 		}
 		return elementText;
@@ -490,23 +496,23 @@ public class Action extends BaseClass{
 	
 	public static void clickfromList(List<WebElement> ele, String text) {
 
-		int i = 0;
 		try {
 			Log.info("Executing the clickfromList keyword");
 			Log.info("Clciking the element from the list of "+ele);
-			for(i =0;i<ele.size();i++) {
-			 String elementText1 = ele.get(i).getText();
-			 if(elementText1.equals(text))
+			for(int i =0;i<ele.size();i++) {
+			Actions act = new Actions(getDriver());
+			act.moveToElement(ele.get(i)).build().perform();
+			 String elementText = ele.get(i).getText();
+			 Log.info(elementText);
+			 if(elementText.equals(text))
 			 {
 				 ele.get(i).click();
-				 System.out.println(elementText1 +"Clicked successfully");
-				 Thread.sleep(5000);
-				 Log.info("The element is clicked successfully");
+				 Log.info(text +"Clicked successfully");
 				 break;
 			 }
 			 else if(i==ele.size()-1)
 			 {
-				 Log.info("The expected text is not displayed to click in the list");
+				 Log.info("The expected text "+text+" is not displayed to click in the list");
 			 }
 			}
 			

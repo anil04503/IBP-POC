@@ -145,6 +145,13 @@ public class TestPurpose extends BaseClass{
 //    	System.out.println(" Random Integer:"+ random.nextInt(10000));
 //    	String str = driver.findElement(By.xpath("//*[@role='group']/p-treenode[2]")).getText();
 //    	System.out.println(str);
+//    	driver.findElement(By.id("firstname")).click();
+    	String names = "prappo";
+    	String[] res = names.split("[,]", 0);
+    	System.out.println(res.length);
+    	for(int j=0;j<res.length;j++) {
+            System.out.println(res[j]);
+         }
     	
     }  
   

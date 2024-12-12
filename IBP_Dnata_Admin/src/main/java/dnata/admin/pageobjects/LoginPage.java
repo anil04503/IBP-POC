@@ -60,9 +60,10 @@ public class LoginPage extends BaseClass {
 		Action.click(signInButton);
 	}
 	
-	public void clickYesButton() {
+	public void clickYesButton() throws InterruptedException {
 		Action.explicitWaitVisibility(yesButton, 20);
 		Action.click(yesButton);
+		Thread.sleep(2000);
 	}
 	
 
