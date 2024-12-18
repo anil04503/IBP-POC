@@ -83,7 +83,7 @@ public class CompanyListPage extends BaseClass {
 	@FindBy(xpath = "//*[@role='listbox']/mat-option")
 	List<WebElement> addCompanyBranchOptions;
 	
-	@FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div[1]/div[10]/div/div/mat-select/div/div[2]")
+	@FindBy(xpath = "//*[label[text()='Mobile No ']]/div/mat-select/div/div[2]")
 	WebElement addCompanyMobileCodeDropdownButton;
 	
 	@FindBy(xpath = "//*[@role='listbox']/mat-option")
@@ -142,6 +142,9 @@ public class CompanyListPage extends BaseClass {
 	
 	@FindBy(xpath = "//*[text()='Add new']")
 	WebElement productConfigAddNewButton;
+	
+	@FindBy(xpath = "//*[text()='Add New']")
+	WebElement customerCreationAddNewButton;
 	
 	@FindBy(xpath = "//input[@name='Rail']")
 	WebElement productConfigRailCheckbox;
@@ -248,6 +251,100 @@ public class CompanyListPage extends BaseClass {
 	@FindBy(xpath = "//*[@class='ag-center-cols-container']/div/div[1]")
 	WebElement userCreationRoleListElement;
 	
+	@FindBy(xpath = "//*[@title='Customer']")
+	WebElement customerCreationiconButton;
+	
+	@FindBy(xpath = "//mat-select[@formcontrolname='salutation']/div/div[2]")
+	WebElement customerCreationSalutationDropdownButton;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	List<WebElement> customerCreationsalutationOptions;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement customerCreationsalutationOptionsElement;
+	
+	@FindBy(id = "firstname")
+	WebElement customerCreationFristnameInput;
+	
+	@FindBy(id = "lastname")
+	WebElement customerCreationLastnameInput;
+	
+	@FindBy(xpath = "//mat-select[@formcontrolname='nationality']/div/div[2]")
+	WebElement customerCreationNationalityDropdownButton;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	List<WebElement> customerCreationNationalityOptions;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement customerCreationNationalityOptionsElement;
+	
+	@FindBy(xpath = "//*[label[text()='Phone Number']]/div/mat-select/div/div[2]")
+	WebElement customerCreationPhoneNumberDropdownButton;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	List<WebElement> customerCreationPhoneNumberOptions;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement customerCreationPhoneNumberOptionsElement;
+	
+	@FindBy(xpath = "//input[@placeholder='PhoneNumber']")
+	WebElement customerCreationPhoneNumberInput;
+	
+	@FindBy(xpath = "//input[@placeholder='PassportNo']")
+	WebElement customerCreationPassportNumberInput;
+	
+	@FindBy(xpath = "//*[label[text()='Passport Issued Govt']]/mat-select/div/div[2]")
+	WebElement customerCreationPassportIssuedDropdownButton;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	List<WebElement> customerCreationPassportIssuedOptions;
+	
+	@FindBy(xpath = "//*[@role='listbox']/mat-option")
+	WebElement customerCreationPassportIssuedOptionsElement;
+	
+	@FindBy(xpath = "//input[@placeholder='Email']")
+	WebElement customerCreationEmailInput;
+	
+	@FindBy(xpath = "//input[@placeholder='City']")
+	WebElement customerCreationCityInput;
+	
+	@FindBy(id = "genderMale")
+	WebElement customerCreationMaleRadioButton;
+	
+	@FindBy(id = "genderFemale")
+	WebElement customerCreationFemaleRadioButton;
+	
+	@FindBy(id = "dateOfBirth")
+	WebElement customerCreationDOBInput;
+	
+	@FindBy(xpath = "//input[@formcontrolname='passportIssueDate']")
+	WebElement customerCreationPIDInput;
+	
+	@FindBy(xpath = "//input[@formcontrolname='passportExpiryDate']")
+	WebElement customerCreationPEDInput;
+	
+	@FindBy(xpath = "//*[@title='Supplier Configuration']")
+	WebElement supplierConfigiconButton;
+	
+	@FindBy(xpath = "//*[text()='CLUBMED SIT']/preceding-sibling::div/input")
+	WebElement supplierConfigiconCLUBMEDSITCheckbox;
+	
+	@FindBy(xpath = "//*[text()='HertZ Test ']/preceding-sibling::div/input")
+	WebElement supplierConfigiconHertZTestCheckbox;
+	
+	@FindBy(xpath = "//*[@title='FOP']")
+	WebElement FOPiconButton;
+	
+	@FindBy(xpath = "//*[label[text()='FOP Type']]/mat-select/div/div[2]")
+	WebElement FOPTypeDropdownButton;
+	
+	@FindBy(xpath = "//input[@value='true']")
+	WebElement FOPTrueRadioButton;
+	
+	@FindBy(xpath = "//input[@value='false']")
+	WebElement FOPFalseRadioButton;
+	
+	
 	
 	
 	
@@ -314,8 +411,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectCopanyType(String companytype) throws InterruptedException {
-		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
-		Action.clickfromList(addCompanyCompTypeOptions, companytype);
+//		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
+//		Action.clickfromList(addCompanyCompTypeOptions, companytype);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+companytype+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+companytype+"']")));
 	}
 	
 	public void clickBranchDropdownButton() {
@@ -324,8 +423,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectBranch(String branch) throws InterruptedException {
-		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
-		Action.clickfromList(addCompanyBranchOptions, branch);
+//		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
+//		Action.clickfromList(addCompanyBranchOptions, branch);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+branch+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+branch+"']")));
 	}
 	
 	public void clickCountryDropdownButton() {
@@ -334,8 +435,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectCountry(String country) throws InterruptedException {
-		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
-		Action.clickfromList(addCompanyCountryOptions, country);
+//		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
+//		Action.clickfromList(addCompanyCountryOptions, country);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+country+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+country+"']")));
 	}
 	
 	public void clickMobileCodeDropdownButton() {
@@ -344,8 +447,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectMobileCode(String mobilecode) throws InterruptedException {
-		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
-		Action.clickfromList(addCompanyMobileCodeOptions, mobilecode);
+//		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
+//		Action.clickfromList(addCompanyMobileCodeOptions, mobilecode);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+mobilecode+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+mobilecode+"']")));
 	}
 	
 	public void clickBOproviderDropdownButton() {
@@ -354,8 +459,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectBOprovider(String boProvider) throws InterruptedException {
-		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
-		Action.clickfromList(addCompanyBOproviderOptions, boProvider);
+//		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
+//		Action.clickfromList(addCompanyBOproviderOptions, boProvider);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+boProvider+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+boProvider+"']")));
 	}
 	
 	public void clickCustomerGroupDropdownButton() {
@@ -374,8 +481,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectChannelName(String channelName) throws InterruptedException {
-		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
-		Action.clickfromList(addCompanyChannelNameOptions, channelName);
+//		Action.explicitWaitVisibility(createCompdropdownOptionsListElement, 20);
+//		Action.clickfromList(addCompanyChannelNameOptions, channelName);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+channelName+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+channelName+"']")));
 	}
 	
 	public void enterAccountCode(String accountcode) {
@@ -444,6 +553,7 @@ public class CompanyListPage extends BaseClass {
 	
 	public void clickProductConfigGearIcon() {
 		Action.explicitWaitVisibility(productConfigGeariconButton, 20);
+		Action.JSelementScrollView(productConfigGeariconButton);;
 		Action.click(productConfigGeariconButton);
 	}
 	
@@ -525,8 +635,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectuserCreationSalutation(String salutation) throws InterruptedException {
-		Action.explicitWaitVisibility(userCreationsalutationOptionsElement, 20);
-		Action.clickfromList(userCreationsalutationOptions, salutation);
+//		Action.explicitWaitVisibility(userCreationsalutationOptionsElement, 20);
+//		Action.clickfromList(userCreationsalutationOptions, salutation);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+salutation+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+salutation+"']")));
 	}
 	
 	public void enterUserCreationFirstname(String firstname) {
@@ -593,8 +705,10 @@ public class CompanyListPage extends BaseClass {
 	}
 	
 	public void selectuserCreationRoleOption(String role) throws InterruptedException {
-		Action.explicitWaitVisibility(userCreationAssignRoleOptionsElement, 20);
-		Action.clickfromList(userCreationAssignRoleOptions, role);
+//		Action.explicitWaitVisibility(userCreationAssignRoleOptionsElement, 20);
+//		Action.clickfromList(userCreationAssignRoleOptions, role);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+role+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+role+"']")));
 	}
 	
 	public void selectUserRoleModule(String module) {
@@ -639,6 +753,179 @@ public class CompanyListPage extends BaseClass {
 		}
 		return role;
 	}
+	
+	public void clickCustomerCreationIcon() {
+		Action.explicitWaitVisibility(customerCreationiconButton, 20);
+		Action.click(customerCreationiconButton);
+	}
+	
+	public void clickCustomerCreationAddnewButton() {
+		Action.explicitWaitVisibility(customerCreationAddNewButton, 20);
+		Action.click(customerCreationAddNewButton);
+	}
+	
+	public void clickCustomerCreationSalutationDropdown() {
+		Action.explicitWaitVisibility(customerCreationSalutationDropdownButton, 20);
+		Action.click(customerCreationSalutationDropdownButton);
+	}
+	
+	public void selectCustomerCreationSalutation(String salutation) throws InterruptedException {
+//		Action.explicitWaitVisibility(customerCreationsalutationOptionsElement, 20);
+//		Action.clickfromList(customerCreationsalutationOptions, salutation);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+salutation+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+salutation+"']")));
+	}
+	
+	public void enterCustomerCreationFirstname(String firstname) {
+		Action.explicitWaitVisibility(customerCreationFristnameInput, 20);
+		Action.enterData(customerCreationFristnameInput, firstname);
+	}
+	
+	public void enterCustomerCreationLastname(String lastname) {
+		Action.explicitWaitVisibility(customerCreationLastnameInput, 20);
+		Action.enterData(customerCreationLastnameInput, lastname);
+	}
+	
+	public void enterCustomerCreationDOB(String DOB) {
+		Action.explicitWaitVisibility(customerCreationDOBInput, 20);
+		Action.enterData(customerCreationDOBInput, DOB);
+	}
+	
+	public void selectCustomerCreationGender(String gender) {
+		
+		if(gender.equals("Male"))
+		{
+			Action.explicitWaitVisibility(customerCreationMaleRadioButton,20);
+			Action.click(customerCreationMaleRadioButton);
+		}
+		else if(gender.equals("Female"))
+		{
+			Action.explicitWaitVisibility(customerCreationFemaleRadioButton, 20);
+			Action.click(customerCreationFemaleRadioButton);
+		}	
+	}
+	
+	public void clickCustomerCreationNationalityDropdown() {
+		Action.explicitWaitVisibility(customerCreationNationalityDropdownButton, 20);
+		Action.click(customerCreationNationalityDropdownButton);
+	}
+	
+	public void selectCustomerCreationNationality(String nationality) throws InterruptedException {
+//		Action.explicitWaitVisibility(customerCreationNationalityOptionsElement, 20);
+//		Action.clickfromList(customerCreationNationalityOptions, nationality);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+nationality+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+nationality+"']")));
+	}
+	
+	public void clickCustomerCreationPhoneNumberDropdown() {
+		Action.explicitWaitVisibility(customerCreationPhoneNumberDropdownButton, 20);
+		Action.click(customerCreationPhoneNumberDropdownButton);
+	}
+	
+	public void selectCustomerCreationPhoneNumber(String phoneCode) throws InterruptedException {
+//		Action.explicitWaitVisibility(customerCreationPhoneNumberOptionsElement, 20);
+//		Action.clickfromList(customerCreationPhoneNumberOptions, phoneCode);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+phoneCode+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+phoneCode+"']")));
+	}
+	
+	public void enterCustomerCreationPhoneNumber(String phoneNumber) {
+		Action.explicitWaitVisibility(customerCreationPhoneNumberInput, 20);
+		Action.enterData(customerCreationPhoneNumberInput, phoneNumber);
+	}
+	
+	public void enterCustomerCreationPassportNumber(String passportNumber) {
+		Action.explicitWaitVisibility(customerCreationPassportNumberInput, 20);
+		Action.enterData(customerCreationPassportNumberInput, passportNumber);
+	}
+	
+	public void enterCustomerCreationPID(String PID) {
+		Action.explicitWaitVisibility(customerCreationPIDInput, 20);
+		Action.enterData(customerCreationPIDInput, PID);
+	}
+	
+	public void enterCustomerCreationPED(String PED) {
+		Action.explicitWaitVisibility(customerCreationPEDInput, 20);
+		Action.enterData(customerCreationPEDInput, PED);
+	}
+	
+	public void clickCustomerCreationPassportIssuedDropdown() {
+		Action.explicitWaitVisibility(customerCreationPassportIssuedDropdownButton, 20);
+		Action.click(customerCreationPassportIssuedDropdownButton);
+	}
+	
+	public void selectCustomerCreationPassportIssued(String passportIssued) throws InterruptedException {
+//		Action.explicitWaitVisibility(customerCreationPassportIssuedOptionsElement, 20);
+//		Action.clickfromList(customerCreationPassportIssuedOptions, passportIssued);
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+passportIssued+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+passportIssued+"']")));
+	}
+	
+	public void enterCustomerCreationEmail(String email) {
+		Action.explicitWaitVisibility(customerCreationEmailInput, 20);
+		Action.enterData(customerCreationEmailInput, email);
+	}
+	
+	public void enterCustomerCreationCity(String city) {
+		Action.explicitWaitVisibility(customerCreationCityInput, 20);
+		Action.enterData(customerCreationCityInput, city);
+	}
+	
+	public void clickSupplierConfigIcon() {
+		Action.explicitWaitVisibility(supplierConfigiconButton, 20);
+		Action.click(supplierConfigiconButton);
+	}
+	
+	public void selectSupplierConfigName(String supplierConfig) {
+		
+		if(supplierConfig.equals("CLUBMED SIT"))
+		{
+			Action.explicitWaitVisibility(supplierConfigiconCLUBMEDSITCheckbox, 20);
+			Action.click(supplierConfigiconCLUBMEDSITCheckbox);
+		}
+		else if(supplierConfig.equals("HertZ Test"))
+		{
+			Action.explicitWaitVisibility(supplierConfigiconHertZTestCheckbox, 20);
+			Action.click(supplierConfigiconHertZTestCheckbox);
+		}
+		else if(supplierConfig.equals("CLUBMED SIT,HertZ Test"))
+		{
+			Action.explicitWaitVisibility(supplierConfigiconCLUBMEDSITCheckbox, 20);
+			Action.click(supplierConfigiconCLUBMEDSITCheckbox);
+			Action.click(supplierConfigiconHertZTestCheckbox);
+		}	
+	}
+	
+	public void clickFOPIcon() {
+		Action.explicitWaitVisibility(FOPiconButton, 20);
+		Action.click(FOPiconButton);
+	}
+	
+	public void clickFOPTypeDropdown() {
+		Action.explicitWaitVisibility(FOPTypeDropdownButton, 20);
+		Action.click(FOPTypeDropdownButton);
+	}
+	
+	public void selectFOPType(String FOPType) throws InterruptedException {
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+FOPType+"']")), 20);
+		Action.click(getDriver().findElement(By.xpath("//*[text()='"+FOPType+"']")));
+	}
+	
+	public void selectFOPDefault(String FOPDefault) {
+		
+		if(FOPDefault.equals("True"))
+		{
+			Action.explicitWaitVisibility(FOPTrueRadioButton, 20);
+			Action.click(FOPTrueRadioButton);
+		}
+		else if(FOPDefault.equals("False"))
+		{
+			Action.explicitWaitVisibility(FOPFalseRadioButton, 20);
+			Action.click(FOPFalseRadioButton);
+		}
+	}
+	
+	
 	
 	
 	

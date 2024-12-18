@@ -11,16 +11,17 @@
       <class name="dnata.admin.testcases.HomePageTest"/>
       <class name="dnata.admin.testcases.CompanyListTest">
        <methods>
-       <!--<include name="verifyBranchCompanyCreation"/>-->
-       <!--<include name="verifyB2BCompanyCreation"/>-->
-       <!--<include name="VerifyProductConfigurationSetup"/>
+       <include name="verifyBranchCompanyCreation"/>
+       <include name="verifyB2BCompanyCreation"/>
+       <include name="VerifyProductConfigurationSetup"/>
        <include name="VerifyCarRentalServiceChargeSetup"/>
-       <include name="verifyCompanyUserCreation"/>-->
+       <include name="verifyCompanyUserCreation"/>
        <include name="verifyCompanyUserCreationAssignRole"/>
+       <include name="verifyCompanyCustomerCreation"/>
+       <include name="verifyCompanySupplierConfig"/>
+       <include name="verifyCompanyFOP"/>
       </methods>
       </class>
-      <!--<class name="dnata.admin.testcases.EndtoEndTest"/>
-      <class name="dnata.admin.testcases.IndexPageTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

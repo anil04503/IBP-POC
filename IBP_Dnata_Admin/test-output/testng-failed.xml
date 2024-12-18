@@ -8,10 +8,16 @@
     <classes>
       <class name="dnata.admin.testcases.CompanyListTest">
         <methods>
+          <include name="verifyCompanySupplierConfig" invocation-numbers="0"/>
           <include name="afterSuite"/>
+          <include name="VerifyProductConfigurationSetup"/>
+          <include name="verifyB2BCompanyCreation" invocation-numbers="0"/>
           <include name="closeApp"/>
-          <include name="verifyCompanyUserCreationAssignRole" invocation-numbers="0"/>
+          <include name="VerifyCarRentalServiceChargeSetup"/>
+          <include name="verifyBranchCompanyCreation" invocation-numbers="0"/>
+          <include name="verifyCompanyFOP" invocation-numbers="0"/>
           <include name="launchApp"/>
+          <include name="verifyCompanyUserCreationAssignRole" invocation-numbers="0"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- dnata.admin.testcases.CompanyListTest -->

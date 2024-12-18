@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="6" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-12T22:01:52 IST" name="Suite" finished-at="2024-12-12T22:02:44 IST" duration-ms="51082">
+  <suite started-at="2024-12-19T02:04:38 IST" name="Suite" finished-at="2024-12-19T02:08:12 IST" duration-ms="213596">
     <groups>
       <group name="Smoke">
-        <method signature="HomePageTest.verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@26b3fd41]" name="verifyOrgDetailsText" class="dnata.admin.testcases.HomePageTest"/>
-        <method signature="LoginPageTest.verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@4c39bec8]" name="verifyLoginSuccess" class="dnata.admin.testcases.LoginPageTest"/>
-        <method signature="HomePageTest.verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@26b3fd41]" name="verifyOrgDetailsParameters" class="dnata.admin.testcases.HomePageTest"/>
-        <method signature="HomePageTest.verifyCompanyListheadingText()[pri:2, instance:dnata.admin.testcases.HomePageTest@26b3fd41]" name="verifyCompanyListheadingText" class="dnata.admin.testcases.HomePageTest"/>
-        <method signature="CompanyListTest.verifyCompanyUserCreationAssignRole(java.util.HashMap)[pri:5, instance:dnata.admin.testcases.CompanyListTest@7494f96a]" name="verifyCompanyUserCreationAssignRole" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyBranchCompanyCreation(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyBranchCompanyCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="HomePageTest.verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@2e377400]" name="verifyOrgDetailsText" class="dnata.admin.testcases.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@1f59a598]" name="verifyLoginSuccess" class="dnata.admin.testcases.LoginPageTest"/>
+        <method signature="CompanyListTest.verifyB2BCompanyCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyB2BCompanyCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="HomePageTest.verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@2e377400]" name="verifyOrgDetailsParameters" class="dnata.admin.testcases.HomePageTest"/>
+        <method signature="CompanyListTest.VerifyProductConfigurationSetup()[pri:2, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="VerifyProductConfigurationSetup" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="HomePageTest.verifyCompanyListheadingText()[pri:2, instance:dnata.admin.testcases.HomePageTest@2e377400]" name="verifyCompanyListheadingText" class="dnata.admin.testcases.HomePageTest"/>
+        <method signature="CompanyListTest.VerifyCarRentalServiceChargeSetup()[pri:3, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="VerifyCarRentalServiceChargeSetup" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanyUserCreation(java.util.HashMap)[pri:4, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyCompanyUserCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanyUserCreationAssignRole(java.util.HashMap)[pri:5, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyCompanyUserCreationAssignRole" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanyCustomerCreation(java.util.HashMap)[pri:6, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyCompanyCustomerCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanySupplierConfig(java.util.HashMap)[pri:7, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyCompanySupplierConfig" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanyFOP(java.util.HashMap)[pri:8, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" name="verifyCompanyFOP" class="dnata.admin.testcases.CompanyListTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-12-12T22:01:52 IST" name="Test_All" finished-at="2024-12-12T22:02:44 IST" duration-ms="51082">
+    <test started-at="2024-12-19T02:04:38 IST" name="Test_All" finished-at="2024-12-19T02:08:12 IST" duration-ms="213596">
       <class name="dnata.admin.testcases.LoginPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:dnata.admin.testcases.LoginPageTest@4c39bec8]" started-at="2024-12-12T22:01:52 IST" name="loadConfig" finished-at="2024-12-12T22:01:52 IST" duration-ms="630" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:dnata.admin.testcases.LoginPageTest@1f59a598]" started-at="2024-12-19T02:04:37 IST" name="loadConfig" finished-at="2024-12-19T02:04:38 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@4c39bec8]" started-at="2024-12-12T22:01:52 IST" name="launchApp" finished-at="2024-12-12T22:02:02 IST" duration-ms="9716" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@1f59a598]" started-at="2024-12-19T02:04:38 IST" name="launchApp" finished-at="2024-12-19T02:04:49 IST" duration-ms="11109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@4c39bec8]" started-at="2024-12-12T22:02:04 IST" name="verifyLoginSuccess" data-provider="ValidUserandPwd" finished-at="2024-12-12T22:02:19 IST" duration-ms="14665" status="PASS">
+        <test-method signature="verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@1f59a598]" started-at="2024-12-19T02:04:51 IST" name="verifyLoginSuccess" data-provider="ValidUserandPwd" finished-at="2024-12-19T02:05:07 IST" duration-ms="16184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,41 +41,399 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginSuccess -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@4c39bec8]" started-at="2024-12-12T22:02:44 IST" name="closeApp" finished-at="2024-12-12T22:02:44 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@1f59a598]" started-at="2024-12-19T02:08:11 IST" name="closeApp" finished-at="2024-12-19T02:08:12 IST" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:dnata.admin.testcases.LoginPageTest@4c39bec8]" started-at="2024-12-12T22:02:44 IST" name="afterSuite" finished-at="2024-12-12T22:02:45 IST" duration-ms="969" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:dnata.admin.testcases.LoginPageTest@1f59a598]" started-at="2024-12-19T02:08:12 IST" name="afterSuite" finished-at="2024-12-19T02:08:13 IST" duration-ms="1174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- dnata.admin.testcases.LoginPageTest -->
       <class name="dnata.admin.testcases.HomePageTest">
-        <test-method signature="verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@26b3fd41]" started-at="2024-12-12T22:02:19 IST" name="verifyOrgDetailsText" finished-at="2024-12-12T22:02:19 IST" duration-ms="418" status="PASS">
+        <test-method signature="verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@2e377400]" started-at="2024-12-19T02:05:07 IST" name="verifyOrgDetailsText" finished-at="2024-12-19T02:05:08 IST" duration-ms="481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrgDetailsText -->
-        <test-method signature="verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@26b3fd41]" started-at="2024-12-12T22:02:19 IST" name="verifyOrgDetailsParameters" finished-at="2024-12-12T22:02:24 IST" duration-ms="5312" status="PASS">
+        <test-method signature="verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@2e377400]" started-at="2024-12-19T02:05:08 IST" name="verifyOrgDetailsParameters" finished-at="2024-12-19T02:05:13 IST" duration-ms="5463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrgDetailsParameters -->
-        <test-method signature="verifyCompanyListheadingText()[pri:2, instance:dnata.admin.testcases.HomePageTest@26b3fd41]" started-at="2024-12-12T22:02:24 IST" name="verifyCompanyListheadingText" finished-at="2024-12-12T22:02:26 IST" duration-ms="1398" status="PASS">
+        <test-method signature="verifyCompanyListheadingText()[pri:2, instance:dnata.admin.testcases.HomePageTest@2e377400]" started-at="2024-12-19T02:05:13 IST" name="verifyCompanyListheadingText" finished-at="2024-12-19T02:05:15 IST" duration-ms="1537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanyListheadingText -->
       </class> <!-- dnata.admin.testcases.HomePageTest -->
       <class name="dnata.admin.testcases.CompanyListTest">
-        <test-method signature="verifyCompanyUserCreationAssignRole(java.util.HashMap)[pri:5, instance:dnata.admin.testcases.CompanyListTest@7494f96a]" started-at="2024-12-12T22:02:26 IST" name="verifyCompanyUserCreationAssignRole" data-provider="compUserCreation" finished-at="2024-12-12T22:02:44 IST" duration-ms="17541" status="PASS">
+        <test-method signature="verifyBranchCompanyCreation(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:05:15 IST" name="verifyBranchCompanyCreation" data-provider="branchaddcompany" finished-at="2024-12-19T02:05:56 IST" duration-ms="41276" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Role=dnataTestRole, Email=sample@sample.com, First Name=AUTOMATION, Office Phone=123456789, Last Name=TESTING, Module=ADMIN,B2B, Salutation=MR, Password=Sample@123}]]>
+                <![CDATA[{Email=sample@sample.com, Address=Sample Address, Channel Name= Dnata Hertz , Mobile Code=IN-91, City=City, Account Code=123, Name=Automation Testing, Short Name=AT, Customer Group=Dnata GSA Team, Staff Email=sample@sample.com, Limit Type=No Limit, Branch=Dnata Dubai Branch, Back Office Provider= CONVERGENT , Mobile No=912345, Country=INDIA, Company Type=BRANCH}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Add Compan] but found [Add Company],
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Add Compan] but found [Add Company],
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.verifyBranchCompanyCreation(CompanyListTest.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBranchCompanyCreation -->
+        <test-method signature="verifyB2BCompanyCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:05:57 IST" name="verifyB2BCompanyCreation" data-provider="B2Baddcompany" finished-at="2024-12-19T02:06:35 IST" duration-ms="37978" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, Address=Sample Address, Channel Name= Dnata Hertz , Mobile Code=IN-91, City=City, Account Code=123, Name=Automation Testing, Short Name=AT, Customer Group=Dnata GSA Team, Staff Email=sample@sample.com, Limit Type=Fixed, Branch=Dnata Dubai Branch, Back Office Provider= CONVERGENT , Mobile No=912345, Country=INDIA, Company Type=B2B}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Add Compan] but found [Add Company],
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Add Compan] but found [Add Company],
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.verifyB2BCompanyCreation(CompanyListTest.java:125)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyB2BCompanyCreation -->
+        <test-method signature="VerifyProductConfigurationSetup()[pri:2, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:06:35 IST" name="VerifyProductConfigurationSetup" finished-at="2024-12-19T02:06:49 IST" duration-ms="13865" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.VerifyProductConfigurationSetup(CompanyListTest.java:153)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProductConfigurationSetup -->
+        <test-method signature="VerifyCarRentalServiceChargeSetup()[pri:3, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:06:49 IST" name="VerifyCarRentalServiceChargeSetup" finished-at="2024-12-19T02:06:58 IST" duration-ms="9278" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.VerifyCarRentalServiceChargeSetup(CompanyListTest.java:175)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCarRentalServiceChargeSetup -->
+        <test-method signature="verifyCompanyUserCreation(java.util.HashMap)[pri:4, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:06:59 IST" name="verifyCompanyUserCreation" data-provider="compUserCreation" finished-at="2024-12-19T02:07:14 IST" duration-ms="15526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Role= MULTI ROLE 1 , Email=sample@sample.com, First Name=AUTOMATIONUSER, Office Phone=123456789, Last Name=TESTING, Module=B2B, Salutation= MR , Password=Sample@123}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- verifyCompanyUserCreation -->
+        <test-method signature="verifyCompanyUserCreationAssignRole(java.util.HashMap)[pri:5, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:07:14 IST" name="verifyCompanyUserCreationAssignRole" data-provider="compUserCreation" finished-at="2024-12-19T02:07:23 IST" duration-ms="9147" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Role= MULTI ROLE 1 , Email=sample@sample.com, First Name=AUTOMATIONUSER, Office Phone=123456789, Last Name=TESTING, Module=B2B, Salutation= MR , Password=Sample@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.verifyCompanyUserCreationAssignRole(CompanyListTest.java:237)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyCompanyUserCreationAssignRole -->
+        <test-method signature="verifyCompanyCustomerCreation(java.util.HashMap)[pri:6, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:07:24 IST" name="verifyCompanyCustomerCreation" data-provider="compCustomerCreation" finished-at="2024-12-19T02:07:52 IST" duration-ms="28515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, First Name=AUTOMATIONCUSTOMER, PID=01-01-2020, Gender=Male, City=Sample City, Salutation= MR , Nationality= Indian , PED=01-01-2030, Supplier Config=CLUBMED SIT, FOP Default=False, Phone Code= IN - 91 , DOB=01-01-2000, Passport Issued= Indian , Last Name=TESTING, FOP Type=CREDIT, Phone No=912345, Passport No=AY}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyCustomerCreation -->
+        <test-method signature="verifyCompanySupplierConfig(java.util.HashMap)[pri:7, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:07:52 IST" name="verifyCompanySupplierConfig" data-provider="compCustomerCreation" finished-at="2024-12-19T02:08:01 IST" duration-ms="8486" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, First Name=AUTOMATIONCUSTOMER, PID=01-01-2020, Gender=Male, City=Sample City, Salutation= MR , Nationality= Indian , PED=01-01-2030, Supplier Config=CLUBMED SIT, FOP Default=False, Phone Code= IN - 91 , DOB=01-01-2000, Passport Issued= Indian , Last Name=TESTING, FOP Type=CREDIT, Phone No=912345, Passport No=AY}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.verifyCompanySupplierConfig(CompanyListTest.java:305)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanySupplierConfig -->
+        <test-method signature="verifyCompanyFOP(java.util.HashMap)[pri:8, instance:dnata.admin.testcases.CompanyListTest@1757cd72]" started-at="2024-12-19T02:08:01 IST" name="verifyCompanyFOP" data-provider="compCustomerCreation" finished-at="2024-12-19T02:08:11 IST" duration-ms="9382" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, First Name=AUTOMATIONCUSTOMER, PID=01-01-2020, Gender=Male, City=Sample City, Salutation= MR , Nationality= Indian , PED=01-01-2030, Supplier Config=CLUBMED SIT, FOP Default=False, Phone Code= IN - 91 , DOB=01-01-2000, Passport Issued= Indian , Last Name=TESTING, FOP Type=CREDIT, Phone No=912345, Passport No=AY}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Saved successfull] but found [Saved successfully]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at dnata.admin.testcases.CompanyListTest.verifyCompanyFOP(CompanyListTest.java:331)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyFOP -->
       </class> <!-- dnata.admin.testcases.CompanyListTest -->
     </test> <!-- Test_All -->
   </suite> <!-- Suite -->

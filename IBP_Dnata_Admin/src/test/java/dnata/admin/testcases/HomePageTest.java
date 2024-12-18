@@ -8,6 +8,7 @@ import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import dnata.admin.actiondriver.Action;
 import dnata.admin.base.BaseClass;
@@ -22,6 +23,7 @@ import dnata.admin.utility.Log;
 public class HomePageTest extends BaseClass{
 	LoginPage loginpage;
 	HomePage homepage;
+	SoftAssert softAssert;
 	
 	
 
@@ -29,70 +31,76 @@ public class HomePageTest extends BaseClass{
 	@Test(priority = 0,groups = "Smoke")
 	public void verifyOrgDetailsText() {
 		homepage = new HomePage();
+		softAssert = new SoftAssert();
 		Log.startTestCase("verifyOrgDetailsText");
 		Log.info("Verifying the Organization Details text is displayed in the Home page");
 		String orgdetailstext = homepage.getorganizationDetailsText();
-		Assert.assertEquals(orgdetailstext,prop.getProperty("orgabizationdetailstext"));
+		softAssert.assertEquals(orgdetailstext,prop.getProperty("orgabizationdetailstext"));
 		Log.info("The Organization Details text is displayed successfully in the Home page");
 		Log.endTestCase("verifyOrgDetailsText");
+		softAssert.assertAll();
 		}
 	
 	@Test(priority = 1,groups = "Smoke")
 	public void verifyOrgDetailsParameters() {
 		homepage = new HomePage();
+		softAssert = new SoftAssert();
 		Log.startTestCase("verifyOrgDetailsParameters");
 		Log.info("Verifying the Organization Details parameters are displayed in the Home page");
 		String nametext = homepage.getorgdetailsNameText();
-		Assert.assertEquals(nametext,prop.getProperty("nametext"));
+		softAssert.assertEquals(nametext,prop.getProperty("nametext"));
 		String shortnametext = homepage.getorgdetailsShortNameText();
-		Assert.assertEquals(shortnametext,prop.getProperty("shortnametext"));
+		softAssert.assertEquals(shortnametext,prop.getProperty("shortnametext"));
 		String countrytext = homepage.getorgdetailsCountryText();
-		Assert.assertEquals(countrytext,prop.getProperty("countrytext"));
+		softAssert.assertEquals(countrytext,prop.getProperty("countrytext"));
 		String citytext = homepage.getorgdetailsCityText();
-		Assert.assertEquals(citytext,prop.getProperty("citytext"));
+		softAssert.assertEquals(citytext,prop.getProperty("citytext"));
 		String zipcodetext = homepage.getorgdetailsZipcodeText();
-		Assert.assertEquals(zipcodetext,prop.getProperty("zipcodetext"));
+		softAssert.assertEquals(zipcodetext,prop.getProperty("zipcodetext"));
 		String addresstext = homepage.getorgdetailsAddressText();
-		Assert.assertEquals(addresstext,prop.getProperty("addresstext"));
+		softAssert.assertEquals(addresstext,prop.getProperty("addresstext"));
 		String phonenumbertext = homepage.getorgdetailsPhoeNoText();
-		Assert.assertEquals(phonenumbertext,prop.getProperty("phonenumbertext"));
+		softAssert.assertEquals(phonenumbertext,prop.getProperty("phonenumbertext"));
 		String emailtext = homepage.getorgdetailsEmailText();
-		Assert.assertEquals(emailtext,prop.getProperty("emailtext"));
+		softAssert.assertEquals(emailtext,prop.getProperty("emailtext"));
 		String Websitetext = homepage.getorgdetailsWebsiteText();
-		Assert.assertEquals(Websitetext,prop.getProperty("Websitetext"));
+		softAssert.assertEquals(Websitetext,prop.getProperty("Websitetext"));
 		String namevaluetext = homepage.getorgdetailsNameValueText();
-		Assert.assertEquals(namevaluetext,prop.getProperty("namevaluetext"));
+		softAssert.assertEquals(namevaluetext,prop.getProperty("namevaluetext"));
 		String shortnamevaluetext = homepage.getorgdetailsShortNameValueText();
-		Assert.assertEquals(shortnamevaluetext,prop.getProperty("shortnamevaluetext"));
+		softAssert.assertEquals(shortnamevaluetext,prop.getProperty("shortnamevaluetext"));
 		String countryvaluetext = homepage.getorgdetailsCountryValueText();
-		Assert.assertEquals(countryvaluetext,prop.getProperty("countryvaluetext"));
+		softAssert.assertEquals(countryvaluetext,prop.getProperty("countryvaluetext"));
 		String cityvaluetext = homepage.getorgdetailsCityValueText();
-		Assert.assertEquals(cityvaluetext,prop.getProperty("cityvaluetext"));
+		softAssert.assertEquals(cityvaluetext,prop.getProperty("cityvaluetext"));
 		String zipcodevaluetext = homepage.getorgdetailsZipcodeValueText();
-		Assert.assertEquals(zipcodevaluetext,prop.getProperty("zipcodevaluetext"));
+		softAssert.assertEquals(zipcodevaluetext,prop.getProperty("zipcodevaluetext"));
 		String addressvaluetext = homepage.getorgdetailsAddressValueText();
-		Assert.assertEquals(addressvaluetext,prop.getProperty("addressvaluetext"));
+		softAssert.assertEquals(addressvaluetext,prop.getProperty("addressvaluetext"));
 		String phonenumbervaluetext = homepage.getorgdetailsPhoeNoValueText();
-		Assert.assertEquals(phonenumbervaluetext,prop.getProperty("phonenumbervaluetext"));
+		softAssert.assertEquals(phonenumbervaluetext,prop.getProperty("phonenumbervaluetext"));
 		String emailvaluetext = homepage.getorgdetailsEmailValueText();
-		Assert.assertEquals(emailvaluetext,prop.getProperty("emailvaluetext"));
+		softAssert.assertEquals(emailvaluetext,prop.getProperty("emailvaluetext"));
 		String Websitevaluetext = homepage.getorgdetailsWebsiteValueText();
-		Assert.assertEquals(Websitevaluetext,prop.getProperty("Websitevaluetext"));
+		softAssert.assertEquals(Websitevaluetext,prop.getProperty("Websitevaluetext"));
 		Log.info("The Organization Details parameters are displayed successfully in the Home page");
 		Log.endTestCase("verifyOrgDetailsParameters");
+		softAssert.assertAll();
 		}
 	
 	@Test(priority = 2,groups = "Smoke")
 	public void verifyCompanyListheadingText() {
 		homepage = new HomePage();
+		softAssert = new SoftAssert();
 		Log.startTestCase("verifyCompanyListheadingText");
 		Log.info("Verifying the Company List text is displayed in the Home page");
 		homepage.clickoncompanyarrowButton();
 		homepage.clickCompanyListMenu();
 		String companylistheadingText = homepage.getCompanyListheadingText();
-		Assert.assertEquals(companylistheadingText,prop.getProperty("companylistheadingtext"));
+		softAssert.assertEquals(companylistheadingText,prop.getProperty("companylistheadingtext"));
 		Log.info("The Company List text is displayed successfully in the Home page");
 		Log.endTestCase("verifyCompanyListheadingText");
+		softAssert.assertAll();
 		}
 	
 

@@ -8,6 +8,7 @@ import java.util.Random;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,8 +32,9 @@ public class TestPurpose extends BaseClass{
     	WebDriverManager.chromedriver().setup();
     	driver = new ChromeDriver();
     	driver.get("https://dnata-sit-admin.convergentechnologies.com/auth/login");
+    	//driver.get("https://projectmanagement.convergentechnologies.com/login");
     	try {
-			Thread.sleep(60000);
+			Thread.sleep(90000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -107,12 +109,11 @@ public class TestPurpose extends BaseClass{
 //    	Thread.sleep(4000);
 //    	/html/body/kendo-popup/div/kendo-list/div/ul/li/span
 //    	try {
-//    	List<WebElement> elements = driver.findElements(By.xpath("//*[@role='group']/p-treenode"));
+//    	List<WebElement> elements = driver.findElements(By.xpath("//*[i[@class='projects-table--hierarchy-icon']]/a"));
 //    	System.out.println(elements.size());
 //    	for (int i=0;i<elements.size();i++) {
 //    		String str = elements.get(i).getText();
 //    		System.out.println(str);
-//    		System.out.println(i);
 //    	    if(str.equals("Automation Testing199"))
 //    	    {
 //    	    	elements.get(i).click();
@@ -146,12 +147,22 @@ public class TestPurpose extends BaseClass{
 //    	String str = driver.findElement(By.xpath("//*[@role='group']/p-treenode[2]")).getText();
 //    	System.out.println(str);
 //    	driver.findElement(By.id("firstname")).click();
-    	String names = "prappo";
-    	String[] res = names.split("[,]", 0);
-    	System.out.println(res.length);
-    	for(int j=0;j<res.length;j++) {
-            System.out.println(res[j]);
-         }
+//    	String names = "prappo";
+//    	String[] res = names.split("[,]", 0);
+//    	System.out.println(res.length);
+//    	for(int j=0;j<res.length;j++) {
+//            System.out.println(res[j]);
+//         }
+//    	Thread.sleep(5000);
+//    	Actions act = new Actions(driver);
+//		act.moveToElement(driver.findElement(By.xpath("//button[@title='Product Configuration']"))).build().perform();
+//		Thread.sleep(10000);
+//		((JavascriptExecutor)driver).executeScript("arguments[0].focus();", driver.findElement(By.xpath("//button[@title='Product Configuration']")));
+//		Thread.sleep(10000);
+//		Actions act1 = new Actions(driver);
+//		act1.moveToElement(driver.findElement(By.xpath("//button[@title='Product Configuration']"))).click().build().perform();
+//    	 JavascriptExecutor js = (JavascriptExecutor) driver;
+//    	 js.executeScript("window.scrollBy(0, -1000);");
     	
     }  
   

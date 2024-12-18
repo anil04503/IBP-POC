@@ -69,7 +69,7 @@ public class BaseClass {
 	
 	@AfterTest(groups = {"Smoke","Sanity","Regression"})
 	public static void closeApp() {
-		//getDriver().quit();
+		getDriver().quit();
 	}
 	
 	@AfterSuite(groups = {"Smoke","Sanity","Regression"})

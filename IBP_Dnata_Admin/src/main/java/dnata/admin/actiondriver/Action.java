@@ -210,13 +210,61 @@ public class Action extends BaseClass{
 		try {
 			Log.info("Executing the JSelementFocus keyword");
 			Log.info("The " +ele+ " is focusing");
-			((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", ele);
+			((JavascriptExecutor)getDriver()).executeScript("arguments[0].focus();", ele);
 			Log.info("The element " +ele+ " is focused successfully");
 			Log.info("The JSelementFocus keyword executed successfully");
 		}
 		catch(Throwable t) {
 			Log.info("The element " +ele+ " is not focused successfully "+ele+t.getMessage());
 			Log.info("The JSelementFocus keyword not executed successfully");
+		}
+
+	}
+	
+	public static void JSelementScrollView(WebElement ele) {
+		
+		try {
+			Log.info("Executing the JSelementScrollView keyword");
+			Log.info("The " +ele+ " is view to scroll");
+			((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView(false);", ele);
+			Log.info("The element " +ele+ " is scrolled in to view successfully");
+			Log.info("The JSelementScrollView keyword executed successfully");
+		}
+		catch(Throwable t) {
+			Log.info("The element " +ele+ " is not scrolled in to view successfully "+ele+t.getMessage());
+			Log.info("The JSelementScrollView keyword not executed successfully");
+		}
+
+	}
+	
+	public static void JSwindowScrollUp() {
+		
+		try {
+			Log.info("Executing the JSwindowScrollUp keyword");
+			Log.info("The window is scrolling up");
+			((JavascriptExecutor)getDriver()).executeScript("window.scrollBy(0, -1000);");
+			Log.info("The window scrolled up successfully");
+			Log.info("The JSwindowScrollUp keyword executed successfully");
+		}
+		catch(Throwable t) {
+			Log.info("The wndow is not scrolled up successfully " +t.getMessage());
+			Log.info("The JSwindowScrollUp keyword not executed successfully");
+		}
+
+	}
+	
+	public static void JSwindowScrollDown() {
+		
+		try {
+			Log.info("Executing the JSwindowScrollDown keyword");
+			Log.info("The window is scrolling down");
+			((JavascriptExecutor)getDriver()).executeScript("window.scrollBy(0, 1000);");
+			Log.info("The window scrolled down successfully");
+			Log.info("The JSwindowScrollDown keyword executed successfully");
+		}
+		catch(Throwable t) {
+			Log.info("The wndow is not scrolled down successfully " +t.getMessage());
+			Log.info("The JSwindowScrollDown keyword not executed successfully");
 		}
 
 	}
