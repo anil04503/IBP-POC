@@ -20,7 +20,7 @@
         <!-- report name - displayed at top-nav -->
         <reportName>IBP Dnata Admin Automation Test Report
         <![CDATA[
-                <img src='C:\Users\anilA\git\eclipse-workspace\IBP_Dnata_Admin\Logo\logoart.gif'/>
+                <img src='C:\Users\anilA\git\eclipse-workspace\IBP_Dnata_Admin\Logo\dnata_logo.png'/>
             ]]>
         </reportName>
         
