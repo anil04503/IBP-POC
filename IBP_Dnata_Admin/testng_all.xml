@@ -9,8 +9,9 @@
     <classes>
       <class name="dnata.admin.testcases.LoginPageTest"/>
       <class name="dnata.admin.testcases.HomePageTest"/>
-      <class name="dnata.admin.testcases.CompanyListTest">
+      <!--<class name="dnata.admin.testcases.CompanyListTest">
        <methods>
+       <include name="verifyCompanyListheadingText"/>
        <include name="verifyBranchCompanyCreation"/>
        <include name="verifyB2BCompanyCreation"/>
        <include name="VerifyProductConfigurationSetup"/>
@@ -20,6 +21,15 @@
        <include name="verifyCompanyCustomerCreation"/>
        <include name="verifyCompanySupplierConfig"/>
        <include name="verifyCompanyFOP"/>
+      </methods>
+      </class>-->
+      <class name="dnata.admin.testcases.CarRentalRuleTest">
+       <methods>
+       <include name="verifyCarRentalRuleCreationListheadingText"/>
+       <include name="verifyCarRentalRuleCreation"/>
+       <include name="verifyCarRentalRuleEditCancelButton"/>
+       <include name="verifyCarRentalRuleEdit"/>
+       <include name="verifyCarRentalRuleView"/>
       </methods>
       </class>
     </classes>

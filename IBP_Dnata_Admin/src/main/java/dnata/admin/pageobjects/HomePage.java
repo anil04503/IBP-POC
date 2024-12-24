@@ -85,7 +85,7 @@ public class HomePage extends BaseClass {
 	@FindBy(xpath = "//div[@class='container']/div[2]/div[9]/div/div[3]")
 	WebElement orgdetailsWebsiteValueText;
 	
-	@FindBy(xpath = "//*[@id=\"kt_aside_menu\"]/ul/li[6]/a/i")
+	@FindBy(xpath = "//*[span[text()='Company']]/i")
 	WebElement companysideMenuarrowButton;
 	
 	@FindBy(xpath = "//*[text()='Company List']")
@@ -93,6 +93,24 @@ public class HomePage extends BaseClass {
 	
 	@FindBy(xpath = "//h4[text()='Company ']")
 	WebElement companylistheadingText;
+	
+	@FindBy(xpath = "//*[span[text()='Service Charge']]/i")
+	WebElement serviceChargesideMenuarrowButton;
+	
+	@FindBy(xpath = "//*[text()='Car Rental Rule']")
+	WebElement carRentalRulesideMenu;
+	
+	@FindBy(xpath = "//*[text()='Car Rental Template']")
+	WebElement carRentalTemplatesideMenu;
+	
+	@FindBy(xpath = "//*[text()='Clubmed Rule']")
+	WebElement clubmedRulesideMenu;
+	
+	@FindBy(xpath = "//*[text()='Clubmed Template']")
+	WebElement clubmedTemplatesideMenu;
+	
+	@FindBy(xpath = "//h4[text()='CarRental Rule Creation ']")
+	WebElement carRentalRuleCreationlistheadingText;
 	
 	
 	
@@ -209,6 +227,21 @@ public class HomePage extends BaseClass {
 		Action.explicitWaitVisibility(companylistheadingText, 20);
 		String companytext = Action.getText(companylistheadingText);
 		return companytext;
+	}
+	
+	public void clickonServiceChargearrowButton() {
+		Action.click(serviceChargesideMenuarrowButton);	
+	}
+	
+	public void clickCarRentalRuleMenu() {
+		Action.explicitWaitVisibility(carRentalRulesideMenu, 20);
+		Action.click(carRentalRulesideMenu);
+	}
+	
+	public String getCarRentalRuleCreationListheadingText() {
+		Action.explicitWaitVisibility(carRentalRuleCreationlistheadingText, 20);
+		String carRentaltext = Action.getText(carRentalRuleCreationlistheadingText);
+		return carRentaltext;
 	}
 	
 	

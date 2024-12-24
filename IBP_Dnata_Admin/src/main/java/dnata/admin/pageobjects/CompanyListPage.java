@@ -56,7 +56,7 @@ public class CompanyListPage extends BaseClass {
 	@FindBy(xpath = "//input[@placeholder='email']")
 	WebElement addCompanyEmailInput;
 	
-	@FindBy(xpath = "//input[@placeholder='staffEmail']")
+	@FindBy(xpath = "//input[@formcontrolname='staffEmail']")
 	WebElement addCompanyStaffEmailInput;
 	
 	@FindBy(xpath = "//input[@placeholder='Account Code']")
@@ -551,13 +551,15 @@ public class CompanyListPage extends BaseClass {
 		Action.clickfromList(createdCompanyList, compyCreation);
 	}
 	
-	public void clickProductConfigGearIcon() {
+	public void clickProductConfigGearIcon() throws InterruptedException {;
 		Action.explicitWaitVisibility(productConfigGeariconButton, 20);
-		Action.JSelementScrollView(productConfigGeariconButton);;
+		Action.JSelementScrollView(productConfigGeariconButton);
+		Thread.sleep(2000);
 		Action.click(productConfigGeariconButton);
 	}
 	
-	public void clickAddNewButton() {
+	public void clickAddNewButton() throws InterruptedException {
+		Thread.sleep(2000);
 		Action.explicitWaitVisibility(productConfigAddNewButton, 20);
 		Action.click(productConfigAddNewButton);
 	}
@@ -607,11 +609,13 @@ public class CompanyListPage extends BaseClass {
 	public void clickServiceChargeTemplateCheckbox(String serviceChargeTemplate) throws InterruptedException {
 		Action.explicitWaitVisibility(serviceChargeNameListElement, 20);	
     	for (int i=0;i<serviceChargeNameList.size();i++) {
-    		String serviceChargeTemp = serviceChargeNameList.get(i).getText();
+    		String serviceChargeTemp = Action.getText(serviceChargeNameList.get(i));
+    		//String serviceChargeTemp = serviceChargeNameList.get(i).getText();
     		Log.info(serviceChargeTemp);
     	    if(serviceChargeTemp.equals(serviceChargeTemplate))
     	    {
-    	    	serviceChargeNameCheckboxList.get(i).click();
+    	    	Action.click(serviceChargeNameCheckboxList.get(i));
+    	    	//serviceChargeNameCheckboxList.get(i).click();
     	    	Log.info("The checkbox clicked");
     	    	break;
     	    }
@@ -742,11 +746,13 @@ public class CompanyListPage extends BaseClass {
 		String role=null;
 		for(int i=0;i<userCreationModuleList.size();i++)
 		{
-			String moduleText = userCreationModuleList.get(i).getText();
+			String moduleText = Action.getText(userCreationModuleList.get(i));
+			//String moduleText = userCreationModuleList.get(i).getText();
 			Log.info(moduleText);
     	    if(moduleText.equals(module))
     	    {
-    	    	role = userCreationRoleList.get(i).getText();
+    	    	role = Action.getText(userCreationRoleList.get(i));
+    	    	//role = userCreationRoleList.get(i).getText();
     	    	Log.info("The role is "+role);
     	    	break;
     	    }
@@ -759,7 +765,8 @@ public class CompanyListPage extends BaseClass {
 		Action.click(customerCreationiconButton);
 	}
 	
-	public void clickCustomerCreationAddnewButton() {
+	public void clickCustomerCreationAddnewButton() throws InterruptedException {
+		Thread.sleep(2000);
 		Action.explicitWaitVisibility(customerCreationAddNewButton, 20);
 		Action.click(customerCreationAddNewButton);
 	}

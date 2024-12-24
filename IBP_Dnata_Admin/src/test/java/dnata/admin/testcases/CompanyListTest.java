@@ -35,7 +35,22 @@ public class CompanyListTest extends BaseClass{
 	
 
 	
-	@Test(priority = 0, dataProvider = "branchaddcompany", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 0,groups = "Smoke")
+	public void verifyCompanyListheadingText() {
+		homepage = new HomePage();
+		softAssert = new SoftAssert();
+		Log.startTestCase("verifyCompanyListheadingText");
+		Log.info("Verifying the Company List text is displayed in the Home page");
+		homepage.clickoncompanyarrowButton();
+		homepage.clickCompanyListMenu();
+		String companylistheadingText = homepage.getCompanyListheadingText();
+		softAssert.assertEquals(companylistheadingText,prop.getProperty("companylistheadingtext"));
+		Log.info("The Company List text is displayed successfully in the Home page");
+		Log.endTestCase("verifyCompanyListheadingText");
+		softAssert.assertAll();
+		}
+	
+	@Test(priority = 1, dataProvider = "branchaddcompany", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyBranchCompanyCreation(HashMap<String,String> hashMapValue) throws InterruptedException{
 		complistpage = new CompanyListPage();
 		random = new Random();
@@ -79,7 +94,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 1, dataProvider = "B2Baddcompany", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 2, dataProvider = "B2Baddcompany", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyB2BCompanyCreation(HashMap<String,String> hashMapValue) throws InterruptedException {
 		complistpage = new CompanyListPage();
 		random = new Random();
@@ -125,7 +140,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 2, groups = "Smoke")
+	@Test(priority = 3, groups = "Smoke")
 	public void VerifyProductConfigurationSetup() throws InterruptedException {
 		complistpage = new CompanyListPage();
 		softAssert = new SoftAssert();
@@ -153,7 +168,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 3, groups = "Smoke")
+	@Test(priority = 4, groups = "Smoke")
 	public void VerifyCarRentalServiceChargeSetup() throws InterruptedException {
 		complistpage = new CompanyListPage();
 		softAssert = new SoftAssert();
@@ -175,7 +190,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 4, dataProvider = "compUserCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 5, dataProvider = "compUserCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyCompanyUserCreation(HashMap<String,String> hashMapValue) throws InterruptedException {
 		complistpage = new CompanyListPage();
 		random = new Random();
@@ -205,7 +220,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 5, dataProvider = "compUserCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 6, dataProvider = "compUserCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyCompanyUserCreationAssignRole(HashMap<String,String> hashMapValue) throws InterruptedException {
 		complistpage = new CompanyListPage();
 		random = new Random();
@@ -237,7 +252,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 6, dataProvider = "compCustomerCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 7, dataProvider = "compCustomerCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyCompanyCustomerCreation(HashMap<String,String> hashMapValue) throws InterruptedException {
 		complistpage = new CompanyListPage();
 		random = new Random();
@@ -278,7 +293,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 7, dataProvider = "compCustomerCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 8, dataProvider = "compCustomerCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyCompanySupplierConfig(HashMap<String,String> hashMapValue) throws InterruptedException {
 		complistpage = new CompanyListPage();
 		random = new Random();
@@ -305,7 +320,7 @@ public class CompanyListTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 8, dataProvider = "compCustomerCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
+	@Test(priority = 9, dataProvider = "compCustomerCreation", dataProviderClass = DataProviders.class, groups = "Smoke")
 	public void verifyCompanyFOP(HashMap<String,String> hashMapValue) throws InterruptedException {
 		complistpage = new CompanyListPage();
 		random = new Random();

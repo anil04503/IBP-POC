@@ -163,6 +163,21 @@ public class TestPurpose extends BaseClass{
 //		act1.moveToElement(driver.findElement(By.xpath("//button[@title='Product Configuration']"))).click().build().perform();
 //    	 JavascriptExecutor js = (JavascriptExecutor) driver;
 //    	 js.executeScript("window.scrollBy(0, -1000);");
+//    	boolean flag = driver.findElement(By.xpath("//input[@formcontrolname='ruleName']")).isEnabled();
+//    	System.out.println(flag);
+//    	boolean flag1 = driver.findElement(By.xpath("//mat-select[@formcontrolname='bookingType']")).isEnabled();
+//    	System.out.println(flag1);
+//    	boolean flag2 = driver.findElement(By.xpath("//mat-select[@formcontrolname='supplier']")).isEnabled();
+//    	System.out.println(flag2);
+//    	boolean flag3 = driver.findElement(By.xpath("//mat-select[@formcontrolname='region']")).isEnabled();
+//    	System.out.println(flag3);
+//    	String str = driver.findElement(By.xpath("//input[@formcontrolname='ruleName']")).getAttribute("value");
+//    	System.out.println(str);
+//    	String str1 = driver.findElement(By.xpath("//mat-select[@formcontrolname='bookingType']")).getAttribute("value");
+//    	System.out.println(str1);
+//    	String str2 = driver.findElement(By.xpath("//mat-select[@formcontrolname='bookingType']")).getText();
+//    	System.out.println(str2);
+    	
     	
     }  
   

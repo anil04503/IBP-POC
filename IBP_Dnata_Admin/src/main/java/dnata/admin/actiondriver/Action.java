@@ -174,8 +174,6 @@ public class Action extends BaseClass{
 			Log.info("The " +data+ " is trying to enter for the element "+ele);
 			Actions act = new Actions(getDriver());
 			act.moveToElement(ele).build().perform();
-			ele.clear();
-			Thread.sleep(1000);
 			ele.sendKeys(data);
 			Log.info("The " +data+ " is entered successfully for the element "+ele);
 			Log.info("The enterData keyword executed successfully");
@@ -602,6 +600,42 @@ public class Action extends BaseClass{
 			Log.info("There is an error while fetching the autoIT exe file "+t.getMessage());
 			Log.info("The uploadFileAutoIT keyword not executed successfully");
 		}
+	}
+	
+	public static String getAttribute(WebElement ele, String attribute) {
+		String getattribute = null;
+		try {
+			Log.info("Executing the getAttribute keyword");
+			Log.info("Getting the attribute for the element "+ele);
+			Actions act = new Actions(getDriver());
+			act.moveToElement(ele).build().perform();
+			getattribute = ele.getAttribute(attribute);
+			Log.info("The attribute has been fetched successfully for the element "+ele);
+			Log.info("The getAttribute keyword executed successfully");
+		}
+		catch(Throwable t) {
+			Log.info("The attribute has been not fetched successfully for the element "+ele+ t.getMessage());
+			Log.info("The getAttribute keyword not executed successfully");
+		}
+		return getattribute;	
+	}
+	
+	public static String getInputValue(WebElement ele) {
+		String getvalue = null;
+		try {
+			Log.info("Executing the getInputValue keyword");
+			Log.info("Getting the input value for the element "+ele);
+			Actions act = new Actions(getDriver());
+			act.moveToElement(ele).build().perform();
+			getvalue = ele.getAttribute("value");
+			Log.info("The input value has been fetched successfully for the element "+ele);
+			Log.info("The getInputValue keyword executed successfully");
+		}
+		catch(Throwable t) {
+			Log.info("The input value has been not fetched successfully for the element "+ele+ t.getMessage());
+			Log.info("The getInputValue keyword not executed successfully");
+		}
+		return getvalue;	
 	}
 	
 

@@ -88,20 +88,20 @@ public class HomePageTest extends BaseClass{
 		softAssert.assertAll();
 		}
 	
-	@Test(priority = 2,groups = "Smoke")
-	public void verifyCompanyListheadingText() {
-		homepage = new HomePage();
-		softAssert = new SoftAssert();
-		Log.startTestCase("verifyCompanyListheadingText");
-		Log.info("Verifying the Company List text is displayed in the Home page");
-		homepage.clickoncompanyarrowButton();
-		homepage.clickCompanyListMenu();
-		String companylistheadingText = homepage.getCompanyListheadingText();
-		softAssert.assertEquals(companylistheadingText,prop.getProperty("companylistheadingtext"));
-		Log.info("The Company List text is displayed successfully in the Home page");
-		Log.endTestCase("verifyCompanyListheadingText");
-		softAssert.assertAll();
-		}
+//	@Test(priority = 2,groups = "Smoke")
+//	public void verifyCompanyListheadingText() {
+//		homepage = new HomePage();
+//		softAssert = new SoftAssert();
+//		Log.startTestCase("verifyCompanyListheadingText");
+//		Log.info("Verifying the Company List text is displayed in the Home page");
+//		homepage.clickoncompanyarrowButton();
+//		homepage.clickCompanyListMenu();
+//		String companylistheadingText = homepage.getCompanyListheadingText();
+//		softAssert.assertEquals(companylistheadingText,prop.getProperty("companylistheadingtext"));
+//		Log.info("The Company List text is displayed successfully in the Home page");
+//		Log.endTestCase("verifyCompanyListheadingText");
+//		softAssert.assertAll();
+//		}
 	
 
 
