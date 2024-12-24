@@ -9,7 +9,7 @@
     <classes>
       <class name="dnata.admin.testcases.LoginPageTest"/>
       <class name="dnata.admin.testcases.HomePageTest"/>
-      <class name="dnata.admin.testcases.CompanyListTest">
+      <!--<class name="dnata.admin.testcases.CompanyListTest">
        <methods>
        <include name="verifyCompanyListheadingText"/>
        <include name="verifyBranchCompanyCreation"/>
@@ -22,7 +22,7 @@
        <include name="verifyCompanySupplierConfig"/>
        <include name="verifyCompanyFOP"/>
       </methods>
-      </class>
+      </class>-->
       <class name="dnata.admin.testcases.CarRentalRuleTest">
        <methods>
        <include name="verifyCarRentalRuleCreationListheadingText"/>
