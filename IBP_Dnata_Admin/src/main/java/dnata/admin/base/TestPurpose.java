@@ -177,8 +177,9 @@ public class TestPurpose extends BaseClass{
 //    	System.out.println(str1);
 //    	String str2 = driver.findElement(By.xpath("//mat-select[@formcontrolname='bookingType']")).getText();
 //    	System.out.println(str2);
-    	
-    	
+    	boolean flag = driver.findElement(By.xpath("//*[text()='Test']")).isDisplayed();
+    	System.out.println(flag);
+
     }  
   
 }  

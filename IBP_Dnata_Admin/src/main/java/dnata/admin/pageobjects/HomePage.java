@@ -218,9 +218,10 @@ public class HomePage extends BaseClass {
 		Action.click(companysideMenuarrowButton);	
 	}
 	
-	public void clickCompanyListMenu() {
+	public void clickCompanyListMenu() throws InterruptedException {
 		Action.explicitWaitVisibility(companyListsideMenu, 20);
 		Action.click(companyListsideMenu);
+		Thread.sleep(1000);
 	}
 	
 	public String getCompanyListheadingText() {
@@ -233,9 +234,10 @@ public class HomePage extends BaseClass {
 		Action.click(serviceChargesideMenuarrowButton);	
 	}
 	
-	public void clickCarRentalRuleMenu() {
+	public void clickCarRentalRuleMenu() throws InterruptedException {
 		Action.explicitWaitVisibility(carRentalRulesideMenu, 20);
 		Action.click(carRentalRulesideMenu);
+		Thread.sleep(1000);
 	}
 	
 	public String getCarRentalRuleCreationListheadingText() {

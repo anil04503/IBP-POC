@@ -9,9 +9,9 @@
       <class name="dnata.admin.testcases.CarRentalRuleTest">
         <methods>
           <include name="afterSuite"/>
-          <include name="verifyCarRentalRuleView" invocation-numbers="0"/>
           <include name="closeApp"/>
           <include name="launchApp"/>
+          <include name="verifyCarRentalRuleDelete"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- dnata.admin.testcases.CarRentalRuleTest -->

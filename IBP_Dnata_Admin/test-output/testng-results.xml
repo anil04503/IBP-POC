@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-24T11:49:34 IST" name="Suite" finished-at="2024-12-24T11:50:32 IST" duration-ms="58147">
+  <suite started-at="2024-12-24T20:41:12 IST" name="Suite" finished-at="2024-12-24T20:44:50 IST" duration-ms="217465">
     <groups>
       <group name="Smoke">
-        <method signature="CarRentalRuleTest.verifyCarRentalRuleCreationListheadingText()[pri:0, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" name="verifyCarRentalRuleCreationListheadingText" class="dnata.admin.testcases.CarRentalRuleTest"/>
-        <method signature="HomePageTest.verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@1e178745]" name="verifyOrgDetailsText" class="dnata.admin.testcases.HomePageTest"/>
-        <method signature="LoginPageTest.verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@5b94b04d]" name="verifyLoginSuccess" class="dnata.admin.testcases.LoginPageTest"/>
-        <method signature="CarRentalRuleTest.verifyCarRentalRuleCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" name="verifyCarRentalRuleCreation" class="dnata.admin.testcases.CarRentalRuleTest"/>
-        <method signature="HomePageTest.verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@1e178745]" name="verifyOrgDetailsParameters" class="dnata.admin.testcases.HomePageTest"/>
-        <method signature="CarRentalRuleTest.verifyCarRentalRuleEditCancelButton()[pri:2, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" name="verifyCarRentalRuleEditCancelButton" class="dnata.admin.testcases.CarRentalRuleTest"/>
-        <method signature="CarRentalRuleTest.verifyCarRentalRuleEdit(java.util.HashMap)[pri:3, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" name="verifyCarRentalRuleEdit" class="dnata.admin.testcases.CarRentalRuleTest"/>
-        <method signature="CarRentalRuleTest.verifyCarRentalRuleView(java.util.HashMap)[pri:4, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" name="verifyCarRentalRuleView" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleCreationListheadingText()[pri:0, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleCreationListheadingText" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.verifyCompanyListheadingText()[pri:0, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyCompanyListheadingText" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="HomePageTest.verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@c86b9e3]" name="verifyOrgDetailsText" class="dnata.admin.testcases.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@49e5f737]" name="verifyLoginSuccess" class="dnata.admin.testcases.LoginPageTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleCreation" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.verifyBranchCompanyCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyBranchCompanyCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="HomePageTest.verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@c86b9e3]" name="verifyOrgDetailsParameters" class="dnata.admin.testcases.HomePageTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleEditCancelButton()[pri:2, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleEditCancelButton" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.verifyB2BCompanyCreation(java.util.HashMap)[pri:2, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyB2BCompanyCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleEdit(java.util.HashMap)[pri:3, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleEdit" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.VerifyProductConfigurationSetup()[pri:3, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="VerifyProductConfigurationSetup" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleView(java.util.HashMap)[pri:4, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleView" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.VerifyCarRentalServiceChargeSetup()[pri:4, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="VerifyCarRentalServiceChargeSetup" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleDeletePopup()[pri:5, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleDeletePopup" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.verifyCompanyUserCreation(java.util.HashMap)[pri:5, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyCompanyUserCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleDeletePopupNoButton()[pri:6, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleDeletePopupNoButton" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.verifyCompanyUserCreationAssignRole(java.util.HashMap)[pri:6, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyCompanyUserCreationAssignRole" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CarRentalRuleTest.verifyCarRentalRuleDelete()[pri:7, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" name="verifyCarRentalRuleDelete" class="dnata.admin.testcases.CarRentalRuleTest"/>
+        <method signature="CompanyListTest.verifyCompanyCustomerCreation(java.util.HashMap)[pri:7, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyCompanyCustomerCreation" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanySupplierConfig(java.util.HashMap)[pri:8, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyCompanySupplierConfig" class="dnata.admin.testcases.CompanyListTest"/>
+        <method signature="CompanyListTest.verifyCompanyFOP(java.util.HashMap)[pri:9, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" name="verifyCompanyFOP" class="dnata.admin.testcases.CompanyListTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-12-24T11:49:34 IST" name="Test_All" finished-at="2024-12-24T11:50:32 IST" duration-ms="58147">
+    <test started-at="2024-12-24T20:41:12 IST" name="Test_All" finished-at="2024-12-24T20:44:50 IST" duration-ms="217465">
       <class name="dnata.admin.testcases.LoginPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:dnata.admin.testcases.LoginPageTest@5b94b04d]" started-at="2024-12-24T11:49:34 IST" name="loadConfig" finished-at="2024-12-24T11:49:34 IST" duration-ms="518" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:dnata.admin.testcases.LoginPageTest@49e5f737]" started-at="2024-12-24T20:41:12 IST" name="loadConfig" finished-at="2024-12-24T20:41:12 IST" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@5b94b04d]" started-at="2024-12-24T11:49:34 IST" name="launchApp" finished-at="2024-12-24T11:49:44 IST" duration-ms="9605" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@49e5f737]" started-at="2024-12-24T20:41:12 IST" name="launchApp" finished-at="2024-12-24T20:41:22 IST" duration-ms="9433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@5b94b04d]" started-at="2024-12-24T11:49:46 IST" name="verifyLoginSuccess" data-provider="ValidUserandPwd" finished-at="2024-12-24T11:50:00 IST" duration-ms="13590" status="PASS">
+        <test-method signature="verifyLoginSuccess(java.util.HashMap)[pri:0, instance:dnata.admin.testcases.LoginPageTest@49e5f737]" started-at="2024-12-24T20:41:24 IST" name="verifyLoginSuccess" data-provider="ValidUserandPwd" finished-at="2024-12-24T20:41:36 IST" duration-ms="12042" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,31 +49,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginSuccess -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@5b94b04d]" started-at="2024-12-24T11:50:32 IST" name="closeApp" finished-at="2024-12-24T11:50:32 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:dnata.admin.testcases.LoginPageTest@49e5f737]" started-at="2024-12-24T20:44:50 IST" name="closeApp" finished-at="2024-12-24T20:44:50 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:dnata.admin.testcases.LoginPageTest@5b94b04d]" started-at="2024-12-24T11:50:33 IST" name="afterSuite" finished-at="2024-12-24T11:50:34 IST" duration-ms="1038" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:dnata.admin.testcases.LoginPageTest@49e5f737]" started-at="2024-12-24T20:44:50 IST" name="afterSuite" finished-at="2024-12-24T20:44:51 IST" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- dnata.admin.testcases.LoginPageTest -->
       <class name="dnata.admin.testcases.HomePageTest">
-        <test-method signature="verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@1e178745]" started-at="2024-12-24T11:50:00 IST" name="verifyOrgDetailsText" finished-at="2024-12-24T11:50:00 IST" duration-ms="466" status="PASS">
+        <test-method signature="verifyOrgDetailsText()[pri:0, instance:dnata.admin.testcases.HomePageTest@c86b9e3]" started-at="2024-12-24T20:41:36 IST" name="verifyOrgDetailsText" finished-at="2024-12-24T20:41:36 IST" duration-ms="550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrgDetailsText -->
-        <test-method signature="verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@1e178745]" started-at="2024-12-24T11:50:00 IST" name="verifyOrgDetailsParameters" finished-at="2024-12-24T11:50:05 IST" duration-ms="5299" status="PASS">
+        <test-method signature="verifyOrgDetailsParameters()[pri:1, instance:dnata.admin.testcases.HomePageTest@c86b9e3]" started-at="2024-12-24T20:41:36 IST" name="verifyOrgDetailsParameters" finished-at="2024-12-24T20:41:42 IST" duration-ms="5088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrgDetailsParameters -->
       </class> <!-- dnata.admin.testcases.HomePageTest -->
       <class name="dnata.admin.testcases.CarRentalRuleTest">
-        <test-method signature="verifyCarRentalRuleCreationListheadingText()[pri:0, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" started-at="2024-12-24T11:50:05 IST" name="verifyCarRentalRuleCreationListheadingText" finished-at="2024-12-24T11:50:07 IST" duration-ms="1805" status="PASS">
+        <test-method signature="verifyCarRentalRuleCreationListheadingText()[pri:0, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:17 IST" name="verifyCarRentalRuleCreationListheadingText" finished-at="2024-12-24T20:44:20 IST" duration-ms="2922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCarRentalRuleCreationListheadingText -->
-        <test-method signature="verifyCarRentalRuleCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" started-at="2024-12-24T11:50:08 IST" name="verifyCarRentalRuleCreation" data-provider="carRentalRuleCreation" finished-at="2024-12-24T11:50:17 IST" duration-ms="9348" status="PASS">
+        <test-method signature="verifyCarRentalRuleCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:20 IST" name="verifyCarRentalRuleCreation" data-provider="carRentalRuleCreation" finished-at="2024-12-24T20:44:29 IST" duration-ms="8299" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +84,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCarRentalRuleCreation -->
-        <test-method signature="verifyCarRentalRuleEditCancelButton()[pri:2, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" started-at="2024-12-24T11:50:17 IST" name="verifyCarRentalRuleEditCancelButton" finished-at="2024-12-24T11:50:19 IST" duration-ms="2189" status="PASS">
+        <test-method signature="verifyCarRentalRuleEditCancelButton()[pri:2, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:29 IST" name="verifyCarRentalRuleEditCancelButton" finished-at="2024-12-24T20:44:30 IST" duration-ms="1720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCarRentalRuleEditCancelButton -->
-        <test-method signature="verifyCarRentalRuleEdit(java.util.HashMap)[pri:3, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" started-at="2024-12-24T11:50:19 IST" name="verifyCarRentalRuleEdit" data-provider="carRentalRuleCreationEdit" finished-at="2024-12-24T11:50:29 IST" duration-ms="9594" status="PASS">
+        <test-method signature="verifyCarRentalRuleEdit(java.util.HashMap)[pri:3, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:31 IST" name="verifyCarRentalRuleEdit" data-provider="carRentalRuleCreationEdit" finished-at="2024-12-24T20:44:39 IST" duration-ms="8793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCarRentalRuleEdit -->
-        <test-method signature="verifyCarRentalRuleView(java.util.HashMap)[pri:4, instance:dnata.admin.testcases.CarRentalRuleTest@192c3f1e]" started-at="2024-12-24T11:50:29 IST" name="verifyCarRentalRuleView" data-provider="carRentalRuleCreationEdit" finished-at="2024-12-24T11:50:32 IST" duration-ms="3233" status="PASS">
+        <test-method signature="verifyCarRentalRuleView(java.util.HashMap)[pri:4, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:39 IST" name="verifyCarRentalRuleView" data-provider="carRentalRuleCreationEdit" finished-at="2024-12-24T20:44:42 IST" duration-ms="2701" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +110,110 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCarRentalRuleView -->
+        <test-method signature="verifyCarRentalRuleDeletePopup()[pri:5, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:42 IST" name="verifyCarRentalRuleDeletePopup" finished-at="2024-12-24T20:44:43 IST" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCarRentalRuleDeletePopup -->
+        <test-method signature="verifyCarRentalRuleDeletePopupNoButton()[pri:6, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:43 IST" name="verifyCarRentalRuleDeletePopupNoButton" finished-at="2024-12-24T20:44:45 IST" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCarRentalRuleDeletePopupNoButton -->
+        <test-method signature="verifyCarRentalRuleDelete()[pri:7, instance:dnata.admin.testcases.CarRentalRuleTest@3af9c5b7]" started-at="2024-12-24T20:44:45 IST" name="verifyCarRentalRuleDelete" finished-at="2024-12-24T20:44:50 IST" duration-ms="4987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCarRentalRuleDelete -->
       </class> <!-- dnata.admin.testcases.CarRentalRuleTest -->
+      <class name="dnata.admin.testcases.CompanyListTest">
+        <test-method signature="verifyCompanyListheadingText()[pri:0, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:41:42 IST" name="verifyCompanyListheadingText" finished-at="2024-12-24T20:41:44 IST" duration-ms="2953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyListheadingText -->
+        <test-method signature="verifyBranchCompanyCreation(java.util.HashMap)[pri:1, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:41:45 IST" name="verifyBranchCompanyCreation" data-provider="branchaddcompany" finished-at="2024-12-24T20:42:15 IST" duration-ms="30691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, Address=Sample Address, Channel Name= Dnata Hertz , Mobile Code=IN-91, City=City, Account Code=123, Name=Automation Testing, Short Name=AT, Customer Group=Dnata GSA Team, Staff Email=sample@sample.com, Limit Type=No Limit, Branch=Dnata Dubai Branch, Back Office Provider= CONVERGENT , Mobile No=912345, Country=INDIA, Company Type=BRANCH}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBranchCompanyCreation -->
+        <test-method signature="verifyB2BCompanyCreation(java.util.HashMap)[pri:2, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:42:16 IST" name="verifyB2BCompanyCreation" data-provider="B2Baddcompany" finished-at="2024-12-24T20:42:43 IST" duration-ms="27671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, Address=Sample Address, Channel Name= Dnata Hertz , Mobile Code=IN-91, City=City, Account Code=123, Name=Automation Testing, Short Name=AT, Customer Group=Dnata GSA Team, Staff Email=sample@sample.com, Limit Type=Fixed, Branch=Dnata Dubai Branch, Back Office Provider= CONVERGENT , Mobile No=912345, Country=INDIA, Company Type=B2B}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyB2BCompanyCreation -->
+        <test-method signature="VerifyProductConfigurationSetup()[pri:3, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:42:43 IST" name="VerifyProductConfigurationSetup" finished-at="2024-12-24T20:43:01 IST" duration-ms="18034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProductConfigurationSetup -->
+        <test-method signature="VerifyCarRentalServiceChargeSetup()[pri:4, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:43:01 IST" name="VerifyCarRentalServiceChargeSetup" finished-at="2024-12-24T20:43:13 IST" duration-ms="11387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCarRentalServiceChargeSetup -->
+        <test-method signature="verifyCompanyUserCreation(java.util.HashMap)[pri:5, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:43:13 IST" name="verifyCompanyUserCreation" data-provider="compUserCreation" finished-at="2024-12-24T20:43:25 IST" duration-ms="12534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Role= MULTI ROLE 1 , Email=sample@sample.com, First Name=AUTOMATIONUSER, Office Phone=123456789, Last Name=TESTING, Module=B2B, Salutation= MR , Password=Sample@123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyUserCreation -->
+        <test-method signature="verifyCompanyUserCreationAssignRole(java.util.HashMap)[pri:6, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:43:26 IST" name="verifyCompanyUserCreationAssignRole" data-provider="compUserCreation" finished-at="2024-12-24T20:43:35 IST" duration-ms="9457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Role= MULTI ROLE 1 , Email=sample@sample.com, First Name=AUTOMATIONUSER, Office Phone=123456789, Last Name=TESTING, Module=B2B, Salutation= MR , Password=Sample@123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyUserCreationAssignRole -->
+        <test-method signature="verifyCompanyCustomerCreation(java.util.HashMap)[pri:7, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:43:35 IST" name="verifyCompanyCustomerCreation" data-provider="compCustomerCreation" finished-at="2024-12-24T20:43:56 IST" duration-ms="20351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, First Name=AUTOMATIONCUSTOMER, PID=01-01-2020, Gender=Male, City=Sample City, Salutation= MR , Nationality= Indian , PED=01-01-2030, Supplier Config=CLUBMED SIT, FOP Default=False, Phone Code= IN - 91 , DOB=01-01-2000, Passport Issued= Indian , Last Name=TESTING, FOP Type=CREDIT, Phone No=912345, Passport No=AY}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyCustomerCreation -->
+        <test-method signature="verifyCompanySupplierConfig(java.util.HashMap)[pri:8, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:43:56 IST" name="verifyCompanySupplierConfig" data-provider="compCustomerCreation" finished-at="2024-12-24T20:44:06 IST" duration-ms="10336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, First Name=AUTOMATIONCUSTOMER, PID=01-01-2020, Gender=Male, City=Sample City, Salutation= MR , Nationality= Indian , PED=01-01-2030, Supplier Config=CLUBMED SIT, FOP Default=False, Phone Code= IN - 91 , DOB=01-01-2000, Passport Issued= Indian , Last Name=TESTING, FOP Type=CREDIT, Phone No=912345, Passport No=AY}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanySupplierConfig -->
+        <test-method signature="verifyCompanyFOP(java.util.HashMap)[pri:9, instance:dnata.admin.testcases.CompanyListTest@10aa41f2]" started-at="2024-12-24T20:44:06 IST" name="verifyCompanyFOP" data-provider="compCustomerCreation" finished-at="2024-12-24T20:44:17 IST" duration-ms="11086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sample@sample.com, First Name=AUTOMATIONCUSTOMER, PID=01-01-2020, Gender=Male, City=Sample City, Salutation= MR , Nationality= Indian , PED=01-01-2030, Supplier Config=CLUBMED SIT, FOP Default=False, Phone Code= IN - 91 , DOB=01-01-2000, Passport Issued= Indian , Last Name=TESTING, FOP Type=CREDIT, Phone No=912345, Passport No=AY}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyFOP -->
+      </class> <!-- dnata.admin.testcases.CompanyListTest -->
     </test> <!-- Test_All -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -106,6 +106,18 @@ public class CarRentalRulePage extends BaseClass {
 	@FindBy(xpath = "//div[contains(@class,'modal-header')]/button")
 	WebElement carRentalRuleCreationPopupCloseButton;
 	
+	@FindBy(xpath = "//*[text()=' Are you Sure Want to delete ']")
+	WebElement carRentalRuleDeletePopupText;
+	
+	@FindBy(xpath = "//*[text()=' Yes ']")
+	WebElement carRentalRuleDeletePopupYesButton;
+	
+	@FindBy(xpath = "//*[text()=' No ']")
+	WebElement carRentalRuleDeletePopupNoButton;
+	
+	@FindBy(xpath = "//*[text()=' Deleted successfully ']")
+	WebElement carRentalRuleDeleteSuccessText;
+	
 	
 	
 	
@@ -402,6 +414,66 @@ public class CarRentalRulePage extends BaseClass {
 	public void clickCarRentalRulePopupcloseButton() {
 		Action.explicitWaitVisibility(carRentalRuleCreationPopupCloseButton, 20);
 		Action.click(carRentalRuleCreationPopupCloseButton);
+	}
+	
+	public void clickCarRentalRuleDeleteButton(String carrentalRule) throws InterruptedException {
+		Action.explicitWaitVisibility(carRentalRuleCreationGridListElement, 20);
+		for(int i=0;i<carRentalRuleCreationnameGridList.size();i++)
+		{
+			String ruleText = Action.getText(carRentalRuleCreationnameGridList.get(i));
+			Log.info(ruleText);
+    	    if(ruleText.equals(carrentalRule))
+    	    {
+    	    	Action.click(carRentalRuleCreationGridListDelete.get(i));
+    	    	Log.info("The Delete button is clicked");
+    	    	break;
+    	    }
+    	    else if(i==carRentalRuleCreationnameGridList.size()-1 && Action.getAttribute(carRentalRuleCreationGridNextPage, nextButtonAttribute).equals("false")) {
+    	    	carRentalRuleCreationGridNextPageButton.click();
+    	    	Log.info("The Next Page button clicked successfully");
+    	    	Thread.sleep(2000);
+    	    	i=-1;
+    	    }
+    	    else if(i==carRentalRuleCreationnameGridList.size()-1 && Action.getAttribute(carRentalRuleCreationGridNextPage, nextButtonAttribute).equals("true")) {
+    	    	Log.info("The Next Page is not available");
+    	    	break;
+    	    }
+		}
+	}
+	
+	public String getDeletePopupText() {
+		Action.explicitWaitVisibility(carRentalRuleDeletePopupText, 20);
+		String deletetext = Action.getText(carRentalRuleDeletePopupText);
+		return deletetext;
+	}
+	
+	public void clickDeleteNoButton() throws InterruptedException {
+		Action.explicitWaitVisibility(carRentalRuleDeletePopupNoButton, 20);
+		Action.click(carRentalRuleDeletePopupNoButton);
+		Thread.sleep(1000);
+	}
+	
+	public void clickDeleteYesButton() throws InterruptedException {
+		Action.explicitWaitVisibility(carRentalRuleDeletePopupYesButton, 20);
+		Action.click(carRentalRuleDeletePopupYesButton);
+		Thread.sleep(1000);
+	}
+	
+	public String getDeleteSuccessText() {
+		Action.explicitWaitVisibility(carRentalRuleDeleteSuccessText, 20);
+		String deletesuccesstext = Action.getText(carRentalRuleDeleteSuccessText);
+		return deletesuccesstext;
+	}
+	
+	public void clickDeleteSuccessText() throws InterruptedException {
+		Action.explicitWaitVisibility(carRentalRuleDeleteSuccessText, 20);
+		Action.click(carRentalRuleDeleteSuccessText);
+	}
+	
+	public boolean rulenameNotDisplayed(String carrentalRule) throws InterruptedException {
+		Action.explicitWaitVisibility(getDriver().findElement(By.xpath("//*[text()='"+carrentalRule+"']")), 20);
+		boolean result = Action.isDisplayed(getDriver().findElement(By.xpath("//*[text()='"+carrentalRule+"']")));
+		return result;
 	}
 	
 

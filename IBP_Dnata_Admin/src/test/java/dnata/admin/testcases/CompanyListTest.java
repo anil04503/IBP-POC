@@ -36,13 +36,14 @@ public class CompanyListTest extends BaseClass{
 
 	
 	@Test(priority = 0,groups = "Smoke")
-	public void verifyCompanyListheadingText() {
+	public void verifyCompanyListheadingText() throws InterruptedException {
 		homepage = new HomePage();
 		softAssert = new SoftAssert();
 		Log.startTestCase("verifyCompanyListheadingText");
 		Log.info("Verifying the Company List text is displayed in the Home page");
 		homepage.clickoncompanyarrowButton();
 		homepage.clickCompanyListMenu();
+		homepage.clickoncompanyarrowButton();
 		String companylistheadingText = homepage.getCompanyListheadingText();
 		softAssert.assertEquals(companylistheadingText,prop.getProperty("companylistheadingtext"));
 		Log.info("The Company List text is displayed successfully in the Home page");

@@ -448,16 +448,14 @@ public class Action extends BaseClass{
 		try {
 			Log.info("Executing the isDisplayed keyword");
 			flag = ele.isDisplayed();
-			if(flag = true)
+			if(flag == true)
 			{
 			Log.info("The element "+ele+" is displayed successfully");
-			}else if(flag = false) {
-				Log.info("The element "+ele+" is not displayed successfully");
 			}
 			Log.info("The isDisplayed keyword executed successfully");
 		}
 		catch(Throwable t) {
-			Log.info("There is an error while checking the "+ele+ " is displayed"+t.getMessage());
+			Log.info("The "+ele+ " is not displayed"+t.getMessage());
 			Log.info("The isDisplayed keyword not executed successfully");
 		}
 		return flag;
@@ -470,10 +468,10 @@ public class Action extends BaseClass{
 			Actions act = new Actions(getDriver());
 			act.moveToElement(ele).build().perform();
 			flag = ele.isSelected();
-			if(flag = true)
+			if(flag == true)
 			{
 			Log.info("The element "+ele+" is selected successfully");
-			}else if(flag = false) {
+			}else if(flag == false) {
 				Log.info("The element "+ele+" is not selected successfully");
 			}
 			Log.info("The isSelected keyword executed successfully");
@@ -492,10 +490,10 @@ public class Action extends BaseClass{
 			Actions act = new Actions(getDriver());
 			act.moveToElement(ele).build().perform();
 			flag = ele.isEnabled();
-			if(flag = true)
+			if(flag == true)
 			{
 			Log.info("The element "+ele+" is enabled successfully");
-			}else if(flag = false) {
+			}else if(flag == false) {
 				Log.info("The element "+ele+" is not enabled successfully");
 			}
 			Log.info("The isEnabled keyword executed successfully");
